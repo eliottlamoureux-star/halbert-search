@@ -1,0 +1,6 @@
+baseline: 438 distinct texts held
+probing 1800 candidate URLs
+
+
+=== round 4 ===
+  new 0   dup 0   not-letters 13   404 1787

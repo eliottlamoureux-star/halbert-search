@@ -1,0 +1,19 @@
+# build artifacts — regenerate with: python3 -m halbert.corpus
+corpus.pkl
+eval_results.json
+loop_state.json
+progress.json
+diagnosis.json
+vocab_extra.txt
+swipe.md
+results.md
+
+# intermediate agent output, already merged into briefs.json / answer_key.json
+briefs_parts/
+problems_parts/
+key_pools/
+key_parts/
+questions_generated.json
+
+# rejected experiment, kept locally as evidence — see BUILD.md section 9
+briefs.enriched-rejected.json

@@ -1,0 +1,56 @@
+already holding 376 distinct letters (by text fingerprint)
+probing 1231 candidates ...
+
+  KEEP   1066w  live     /Boron/TChapter1.htm
+  KEEP   1556w  live     /Boron/TChapter2.htm
+  KEEP   1292w  live     /Boron/TChapter3.htm
+  KEEP    400w  live     /HOTD/18.htm
+  KEEP    403w  live     /MarkJoyner/hp1.htm
+  KEEP    547w  live     /MarketingMovieNight/MarketingMovieNight1.htm
+  KEEP   2224w  live     /MilloinDollarRolodex/1MillionDollarRolodex.html
+  KEEP   1062w  live     /Newletter-archives-protected/Boron/TChapter1.htm
+  KEEP   1566w  live     /Products_&_Affiliates/Adam&Allen.html
+  KEEP   1177w  live     /StorePages/GaryStuffIndex.htm
+  KEEP    621w  live     /f04/4.html
+  KEEP    403w  live     /f04/5.html
+  KEEP    473w  live     /f04/6.html
+  KEEP    512w  live     /f04/7.html
+  KEEP   4214w  live     /f33/1.HTM
+  KEEP   1022w  live     /goldbox/sleazypitch.htm
+  KEEP    582w  live     /index.html
+  KEEP    628w  live     /index3.html
+  KEEP   2610w  live     /new/b/0102.htm
+  KEEP   3183w  live     /new/b/0297.htm
+  KEEP   4025w  live     /new/b/0299.htm
+  KEEP   2646w  live     /new/b/0300.htm
+  KEEP    893w  live     /new/b/0302.htm
+  KEEP   6075w  live     /new/b/0398.htm
+  KEEP   3120w  live     /new/b/0399.htm
+  KEEP   2423w  live     /new/b/0400.htm
+  KEEP   2719w  live     /new/b/0401.htm
+  KEEP   2321w  live     /new/b/0402.htm
+  KEEP   2375w  live     /new/b/0491.htm
+  KEEP   7101w  live     /new/b/0495.htm
+  KEEP   4198w  live     /new/b/0499.htm
+  KEEP   3546w  live     /new/b/0501.htm
+  KEEP   4146w  live     /new/b/0589.htm
+  KEEP   3281w  live     /new/b/0597.htm
+  KEEP   3598w  live     /new/b/0599.htm
+  KEEP   3911w  live     /new/b/0695.htm
+  KEEP   3147w  live     /new/b/0698.htm
+  KEEP   2183w  live     /new/b/0699.htm
+  KEEP   3883w  live     /new/b/0790.htm
+  KEEP   2753w  live     /new/b/0888.htm
+  KEEP   4289w  live     /new/b/1201.htm
+  KEEP   2623w  live     /new/b/b_cheap_little_classifieds.htm
+  KEEP   5885w  live     /new/b/b_direct_mail_nerd.htm
+  KEEP   3012w  live     /new/b/b_movie_and_tv_stars.htm
+  KEEP   2895w  live     /new/b/b_newspaper_ad_more_profitable .htm
+  KEEP   5442w  live     /new/b/b_nightmare_clients.htm
+  KEEP    598w  live     /new/b/b_roll_out_money.htm
+
+=== round 2 ===
+  new letters kept : 47
+  exact duplicates : 11
+  not letters      : 206
+  unreachable      : 967

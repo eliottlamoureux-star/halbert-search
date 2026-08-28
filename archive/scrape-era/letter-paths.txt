@@ -1,0 +1,441 @@
+/Boron/976_Numbers.htm
+/Boron/Boron 2.0 chapter 1.htm
+/Boron/Boron 2.0 chapter 11.htm
+/Boron/Boron 2.0 chapter 12.htm
+/Boron/Boron 2.0 chapter 13.htm
+/Boron/Boron 2.0 chapter 14.htm
+/Boron/Boron 2.0 chapter 15.htm
+/Boron/Boron 2.0 chapter 16.htm
+/Boron/Boron 2.0 chapter 17.htm
+/Boron/Boron 2.0 chapter 18.htm
+/Boron/Boron 2.0 chapter 19.htm
+/Boron/Boron 2.0 chapter 2.htm
+/Boron/Boron 2.0 chapter 20.htm
+/Boron/Boron 2.0 chapter 21.htm
+/Boron/Boron 2.0 chapter 2B between chapter 2 and 3 .htm
+/Boron/Boron 2.0 chapter 3.htm
+/Boron/Boron 2.0 chapter 4.htm
+/Boron/Boron 2.0 chapter 5.htm
+/Boron/Boron 2.0 chapter 6.htm
+/Boron/Boron 2.0 chapter 7.htm
+/Boron/Boron 2.0 chapter 8.htm
+/Boron/Boron 2.0 chapter 9.htm
+/Boron/Boron Template.htm
+/Boron/BoronLetterCh1.htm
+/Boron/BoronLetterCh2.htm
+/Boron/BoronLetterCh3.htm
+/Boron/BoronLetterCh5.htm
+/Boron/TChapter10.htm
+/Boron/TChapter11.htm
+/Boron/TChapter12.htm
+/Boron/TChapter13.htm
+/Boron/TChapter14.htm
+/Boron/TChapter15.htm
+/Boron/TChapter16.htm
+/Boron/TChapter17.htm
+/Boron/TChapter18.htm
+/Boron/TChapter19.htm
+/Boron/TChapter20.htm
+/Boron/TChapter21.htm
+/Boron/TChapter22.htm
+/Boron/TChapter23.htm
+/Boron/TChapter24.htm
+/Boron/TChapter25.htm
+/Boron/TChapter4.htm
+/Boron/TChapter5.htm
+/Boron/TChapter6.htm
+/Boron/TChapter7.htm
+/Boron/TChapter8.htm
+/Boron/TChapter9.htm
+/Boron/keword_video/test 4/test 4.html
+/Newletter-archives-protected/newsletters/04-25-05.htm
+/Newletter-archives-protected/newsletters/05-23-05.htm
+/Newletter-archives-protected/newsletters/06-10-05.htm
+/Newletter-archives-protected/newsletters/06-28-05.htm
+/Newletter-archives-protected/newsletters/06-30-05-2Link.htm
+/Newletter-archives-protected/newsletters/06-30-05.htm
+/Newletter-archives-protected/newsletters/07-13-05.htm
+/Newletter-archives-protected/newsletters/07-26-05.htm
+/Newletter-archives-protected/newsletters/07-27-05.htm
+/Newletter-archives-protected/newsletters/07-29-05.htm
+/Newletter-archives-protected/newsletters/08-11-05.htm
+/Newletter-archives-protected/newsletters/08-15-05.htm
+/Newletter-archives-protected/newsletters/09-01-05.htm
+/Newletter-archives-protected/newsletters/09-02-05.htm
+/Newletter-archives-protected/newsletters/09-03-05.htm
+/Newletter-archives-protected/newsletters/12-MonthMillionaireOcalaOnly.htm
+/Newletter-archives-protected/newsletters/1FOTGHL.html
+/Newletter-archives-protected/newsletters/1FOTGHLBlankrightFrame.html
+/Newletter-archives-protected/newsletters/1FOTGHLBlankrightFrame1.html
+/Newletter-archives-protected/newsletters/1FOTGHLBoron20ListrightFrame1.html
+/Newletter-archives-protected/newsletters/1FOTGHLFrameset.html
+/Newletter-archives-protected/newsletters/1FOTGHLFramesetBoron20.html
+/Newletter-archives-protected/newsletters/1FOTGHLFramesetContactUs.html
+/Newletter-archives-protected/newsletters/1FOTGHLFramesetFAQ.html
+/Newletter-archives-protected/newsletters/1FOTGHLFramesetFriends.html
+/Newletter-archives-protected/newsletters/1FOTGHLFramesetKevin.html
+/Newletter-archives-protected/newsletters/1FOTGHLFramesetMDR.html
+/Newletter-archives-protected/newsletters/1FOTGHLFramesetProducts&Affiliates.html
+/Newletter-archives-protected/newsletters/1FOTGHLFramesetTGHLS.html
+/Newletter-archives-protected/newsletters/1FOTGHLFramesetWhatsNew.html
+/Newletter-archives-protected/newsletters/1FOTGHLIntermediateleftFrame.html
+/Newletter-archives-protected/newsletters/1FOTGHLIntermediatemainFrame_RightSide.html
+/Newletter-archives-protected/newsletters/1FOTGHLIntermediaterightFrame.html
+/Newletter-archives-protected/newsletters/1FOTGHLMainPagemainFrameChooseFromMenue.html
+/Newletter-archives-protected/newsletters/1FOTGHLOuterFrameset.html
+/Newletter-archives-protected/newsletters/1FOTGHLOuterleftFrame.html
+/Newletter-archives-protected/newsletters/1FOTGHLOutermainFrame.html
+/Newletter-archives-protected/newsletters/1FOTGHLOutertopFrame.html
+/Newletter-archives-protected/newsletters/1FOTGHLleftFrame.html
+/Newletter-archives-protected/newsletters/1FOTGHLmainFrame.html
+/Newletter-archives-protected/newsletters/1FOTGHLrightFrame.html
+/Newletter-archives-protected/newsletters/1FOTGHLrightFrame1.html
+/Newletter-archives-protected/newsletters/1FOTGHLtopFrame.html
+/Newletter-archives-protected/newsletters/1FOTGHLtopFrameoriginal.html
+/Newletter-archives-protected/newsletters/1WhatsNewtopFrameLetters.html
+/Newletter-archives-protected/newsletters/2005-04-12.htm
+/Newletter-archives-protected/newsletters/2005-04-29.htm
+/Newletter-archives-protected/newsletters/Classified_Ads.htm
+/Newletter-archives-protected/newsletters/Copy of index.html
+/Newletter-archives-protected/newsletters/Copy of john.html
+/Newletter-archives-protected/newsletters/FranTarkentonInterviewsJayAbraham.htm
+/Newletter-archives-protected/newsletters/FusionSemPkg.htm
+/Newletter-archives-protected/newsletters/FusionSemPkgoriginal.htm
+/Newletter-archives-protected/newsletters/Goodbye 04-05-05.htm
+/Newletter-archives-protected/newsletters/Goodbye 04-06-05.htm
+/Newletter-archives-protected/newsletters/Goodbye 04-07-05.htm
+/Newletter-archives-protected/newsletters/Goodbye 04-11-05.htm
+/Newletter-archives-protected/newsletters/Goodbye04-07-05Update.htm
+/Newletter-archives-protected/newsletters/GottaProtectYourLinks.htm
+/Newletter-archives-protected/newsletters/HopkinsHalbert.htm
+/Newletter-archives-protected/newsletters/IntermediateFrameset.html
+/Newletter-archives-protected/newsletters/MobilNewsletterBodyTextOnly.html
+/Newletter-archives-protected/newsletters/MobileNewsletter.html
+/Newletter-archives-protected/newsletters/MobileNewsletterB.html
+/Newletter-archives-protected/newsletters/Products&Affiliates.html
+/Newletter-archives-protected/newsletters/SeminarPush05-18-05.htm
+/Newletter-archives-protected/newsletters/SeminarPush05-18-05original.htm
+/Newletter-archives-protected/newsletters/Signup.html
+/Newletter-archives-protected/newsletters/SignupRedirect.html
+/Newletter-archives-protected/newsletters/TestMobileNewsletter with script to load remote content.html
+/Newletter-archives-protected/newsletters/TestMobileNewsletter.html
+/Newletter-archives-protected/newsletters/TheresaFarewell.htm
+/Newletter-archives-protected/newsletters/What's New.htm
+/Newletter-archives-protected/newsletters/__newsletter-archives.htm
+/Newletter-archives-protected/newsletters/_holding.htm
+/Newletter-archives-protected/newsletters/a_template.htm
+/Newletter-archives-protected/newsletters/b3.html
+/Newletter-archives-protected/newsletters/bigJason.html
+/Newletter-archives-protected/newsletters/bullet test.htm
+/Newletter-archives-protected/newsletters/ca_easyway.htm
+/Newletter-archives-protected/newsletters/desperatenerd.html
+/Newletter-archives-protected/newsletters/hopkins.html
+/Newletter-archives-protected/newsletters/john.html
+/Newletter-archives-protected/newsletters/john2.html
+/Newletter-archives-protected/newsletters/jv.html
+/Newletter-archives-protected/newsletters/lettersheaderframe.html
+/Newletter-archives-protected/newsletters/lettersmainframe.html
+/Newletter-archives-protected/newsletters/newissue.html
+/Newletter-archives-protected/newsletters/rememberinggary.htm
+/Newletter-archives-protected/newsletters/test.htm
+/Newletter-archives-protected/newsletters/test2.htm
+/Newletter-archives-protected/newsletters/testing.htm
+/Newletter-archives-protected/newsletters/testtemplate.html
+/Newletter-archives-protected/newsletters/that_guy.htm
+/Newsletters/2005/04-25-05.htm
+/Newsletters/2005/05-23-05.htm
+/Newsletters/2005/06-28-05.htm
+/Newsletters/2005/06-30-05-2Link.htm
+/Newsletters/2005/06-30-05.htm
+/Newsletters/2005/07-13-05.htm
+/Newsletters/2005/07-26-05.htm
+/Newsletters/2005/07-27-05.htm
+/Newsletters/2005/07-29-05.htm
+/Newsletters/2005/08-11-05.htm
+/Newsletters/2005/08-15-05.htm
+/Newsletters/2005/09-01-05.htm
+/Newsletters/2005/09-02-05.htm
+/Newsletters/2005/09-03-05.htm
+/Newsletters/2005/09-05-04.htm
+/Newsletters/2005/09-12-05.htm
+/Newsletters/2005/09-15-05.htm
+/Newsletters/2005/09-23-05.htm
+/Newsletters/2005/09-27-05.htm
+/Newsletters/2005/09-28-05.htm
+/Newsletters/2005/09-30-05.htm
+/Newsletters/2005/10-12-05.htm
+/Newsletters/2005/10-25-05.htm
+/Newsletters/2005/10-27-05.htm
+/Newsletters/2005/11-09-05.htm
+/Newsletters/2005/11-14-05.htm
+/Newsletters/2005/11-16-05-RichJerk.htm
+/Newsletters/2005/11-21-05.htm
+/Newsletters/2005/11-23-05.htm
+/Newsletters/2005/11-29-05.htm
+/Newsletters/2005/12-12-05.htm
+/Newsletters/2005/12-14-05.htm
+/Newsletters/2005/2005-04-12.htm
+/Newsletters/2005/Enlightening-TimeSensitive.htm
+/Newsletters/2011/TonyRobbinsInterviewsJayAbrahamold.htm
+/Newsletters/2011/hiringcopywritersoriginal.htm
+/Newsletters/jam_packed.htm
+/Newsletters/oldzhkj_976_numbers.htm
+/new/newsletters/976-Numbers-Update.htm
+/new/newsletters/976-Numbers.htm
+/new/newsletters/classified-ads.htm
+/newsletters/11_30_04Teleseminar.htm
+/newsletters/2005/06-10-05.htm
+/newsletters/2005/10-12-05original.htm
+/newsletters/2005/11-01-05-RichJerk.htm
+/newsletters/2005/11-21-05reveal1.htm
+/newsletters/2005/11-21-05reveal2.htm
+/newsletters/2005/11-28-05.htm
+/newsletters/2005/2005-04-29.htm
+/newsletters/2005/DRAFT 11-21-05 Version 2.htm
+/newsletters/2006/01-01-06.htm
+/newsletters/2006/eagleeyes.htm
+/newsletters/2006/go_ask_alice.htm
+/newsletters/2006/jam_packed.htm
+/newsletters/2006/marketing_from_space.htm
+/newsletters/2006/modesty_personified.htm
+/newsletters/2006/modesty_personifiedoriginal.htm
+/newsletters/2006/pygmies_armed_with_fruit.htm
+/newsletters/2006/rolls_royce_letter.htm
+/newsletters/2006/spiritual_newsletter.htm
+/newsletters/2006/test.htm
+/newsletters/2006/the_700_million_dollar_man-2.htm
+/newsletters/2006/the_700_million_dollar_man.htm
+/newsletters/2006/the_answer_to_the_rolls_royce_letter.htm
+/newsletters/2007/April Newsletter/April Newsletter.htm
+/newsletters/2007/Elvis_Has_Left_The_Building.html/Elvis_Has_Left_The_Building.html
+/newsletters/2007/march newsletter/march newsletter.htm
+/newsletters/2007/march newsletter/youtube newsletterd.htm
+/newsletters/2007/october 2007 20clicks/20ClicksUpdate9-07.htm
+/newsletters/2007/october 2007 20clicks/20ClicksUpdate9-07b.htm
+/newsletters/2007/october 2007 newsletter/october 2007 newsletter.htm
+/newsletters/2007/october_2007_Good_News/october_2007_Good_News.htm
+/newsletters/2007/october_2007_pandora/pandora_october_2007.htm
+/newsletters/2007/october_2007_pandora/pandora_october_2007B.htm
+/newsletters/2007/youtube newletter/youtube newsletterc.htm
+/newsletters/2007/youtube newletter/youtube newsletterd.htm
+/newsletters/2008/HowToWriteBetterCopyFaster/howtowritebettercopyfaster.htm
+/newsletters/2008/HowToWriteBetterCopyFaster/shortcutcertificateint1.htm
+/newsletters/2008/HowToWriteBetterCopyFaster/shortcutcertificateus1.htm
+/newsletters/2008/HowToWriteBetterCopyFaster/shortcutcopycourse.htm
+/newsletters/2008/Mindset/Mindset.htm
+/newsletters/2008/The_Last_Protege/The_last_Protege.htm
+/newsletters/2008/The_Last_Protege/The_last_Protegeold.htm
+/newsletters/2008/scott/howtowritebettercopyaster.htm
+/newsletters/2008/scott/howtowritebettercopyfaster.htm
+/newsletters/2008/scott/shortcutcertificateint1.htm
+/newsletters/2008/scott/shortcutcertificateus1.htm
+/newsletters/2008/scott/shortcutcopycourse.htm
+/newsletters/2009/BigAnnouncement/BigAnnouncement.html
+/newsletters/2009/BigAnnouncement/BigAnnouncement3rdstep.html
+/newsletters/2009/BigAnnouncement/BrainStormingTapes(Tape 1 Side A).html
+/newsletters/2009/BigAnnouncement/BrainStormingTapes(Tape 1 Side A)/BrainStormingTapes(Tape 1 Side A).html
+/newsletters/2009/CleanUpCopy/CleanUpCopy.htm
+/newsletters/2009/Gary_Halbert_Personal_Ad/Gary_Halbert_Personal_Ad.html
+/newsletters/2009/John Carlton 03_31_09/Channeling_The_Head_Shitweasel.htm
+/newsletters/2009/NPC/NPC.htm
+/newsletters/2009/Perry Marshall/Perry Marshall.htm
+/newsletters/2009/Perry Marshall/PerryMarshallAdWordsAddiction.html
+/newsletters/2009/Thank You/thank_you.htm
+/newsletters/2009/WhiteMail/WhiteMail.htm
+/newsletters/2009/WhiteMail/WhiteMail2.htm
+/newsletters/2009/alexatrial/alexatrial.html
+/newsletters/2009/announcement3/BigAnnouncement3rdstep.html
+/newsletters/2009/announcement3/BrainStormingTapes(Tape 1 Side A)/BrainStormingTapes(Tape 1 Side A).html
+/newsletters/2009/announcement3/bigannouncement.html
+/newsletters/2010/BondsBrainStormBar.htm
+/newsletters/2010/DraytonBird.htm
+/newsletters/2010/DraytonBird2.htm
+/newsletters/2010/DraytonBirdWhatAPilot.htm
+/newsletters/2010/HappyBirthdayPop.htm
+/newsletters/2010/HopkinsBookalog.htm
+/newsletters/2010/ScientificAdvertising.htm
+/newsletters/2010/hopkinshalbert.htm
+/newsletters/2010/xxx.htm
+/newsletters/2011/ASpecialTreat.htm
+/newsletters/2011/FranTarkentonInterviewsJayAbraham.htm
+/newsletters/2011/GaryHalbertsBirthday2011.htm
+/newsletters/2011/JayAbrahamInterview.htm
+/newsletters/2011/TonyRobbinsInterviewsJayAbraham.htm
+/newsletters/2011/TonyRobbinsInterviewsJayAbrahampart1.htm
+/newsletters/2011/hiringcopywriters.htm
+/newsletters/2011/whatinternetpeoplegetwrong.htm
+/newsletters/2013/Become-An-Affiliate.htm
+/newsletters/2013/Become-An-Affiliateold.htm
+/newsletters/2013/Gary-Halbert-Personal-Ad-2.htm
+/newsletters/2013/Gary-Halbert-Personal-Ad.htm
+/newsletters/2013/Halbert_Seal_of_Approval.htm
+/newsletters/2013/nancy-jones.htm
+/newsletters/2014/SignupThankYou.htm
+/newsletters/976-Numbers-Update.htm
+/newsletters/976-Numbers.htm
+/newsletters/976_numbers.htm
+/newsletters/BoronLetterCh1.htm
+/newsletters/BoronLetterCh2.htm
+/newsletters/BoronLetterCh3.htm
+/newsletters/Dec'04.htm
+/newsletters/Die_Hard_Fans_Section/Glass_Yellow_Pages_Ad/Glass_Yellow_Pages_Ad.htm
+/newsletters/Die_Hard_Fans_Section/Scientific_Advertishing/Scientific_Advertising.htm
+/newsletters/Die_Hard_Fans_Section/Scientific_Advertising/Scientific_Advertising.htm
+/newsletters/Die_Hard_Fans_Section/SignupThankYou.htm
+/newsletters/Feb04.htm
+/newsletters/Feb05Seminar.htm
+/newsletters/_zkzd_disaster_insurance.htm
+/newsletters/a_976_numbers.htm
+/newsletters/a_cheap_little_classifieds.htm
+/newsletters/a_exact_name_mailing_lists.htm
+/newsletters/a_mail_100,00_letters.htm
+/newsletters/a_newspaper_ad_more_profitable .htm
+/newsletters/a_product_self_on_tv.htm
+/newsletters/a_roll_out_money.htm
+/newsletters/a_yellow_pages.htm
+/newsletters/aakh_improve_response.htm
+/newsletters/aakj_veritable_orgy.htm
+/newsletters/aakk_you_cant_know.htm
+/newsletters/aazz_about_nothing.htm
+/newsletters/ac_an_apology.htm
+/newsletters/ac_easyway.htm
+/newsletters/ac_interesting_facts.htm
+/newsletters/ac_money.htm
+/newsletters/ac_plasticsurgery.htm
+/newsletters/ac_tape_pitch.htm
+/newsletters/ac_tape_test.htm
+/newsletters/action.htm
+/newsletters/an_insane_idea.htm
+/newsletters/archives.html
+/newsletters/askh_fighter_pilot_attitude.htm
+/newsletters/askj_product_to_sell.htm
+/newsletters/askk_vanity_radio.htm
+/newsletters/aslk_start_every_day.htm
+/newsletters/aslz_winners_losers.htm
+/newsletters/asza_another_issue.htm
+/newsletters/azdedislei_specialreport.html
+/newsletters/azdx_internetsecrets.html
+/newsletters/azkh_starving_crowd.htm
+/newsletters/azkh_starving_crowdold.htm
+/newsletters/azkj_catalog_mailer.htm
+/newsletters/azkk_two_secrets.htm
+/newsletters/azlk_make_god_laugh.htm
+/newsletters/azll_positive_difference.htm
+/newsletters/castration.htm
+/newsletters/chapter12.htm
+/newsletters/cheap_little_classifieds.htm
+/newsletters/classified-ads.htm
+/newsletters/clayton_makepeace_vsl_snippet.htm
+/newsletters/direct_marketing_to_a_starving_crowd.htm
+/newsletters/direct_response.htm
+/newsletters/does_size_matter.htm
+/newsletters/exact_name_mailing_lists.htm
+/newsletters/freeteleseminar.htm
+/newsletters/gloomy_sunday.htm
+/newsletters/hurricane.htm
+/newsletters/iraqisecret.htm
+/newsletters/iraqisecretold.htm
+/newsletters/jan2004.htm
+/newsletters/jasonjcox.htm
+/newsletters/jewfish_creek.htm
+/newsletters/kick-ass-copywriting.htm
+/newsletters/littlebill.htm
+/newsletters/mail_100,00_letters.htm
+/newsletters/mentoring.htm
+/newsletters/message_from_julie.htm
+/newsletters/moneymakingsecrets.htm
+/newsletters/monsterwebsiteprofits.htm
+/newsletters/motherlode.htm
+/newsletters/newsletter-archives.htm
+/newsletters/newspaper_ad_more_profitable .htm
+/newsletters/oneadvantage.htm
+/newsletters/paradigms.htm
+/newsletters/pitch.html
+/newsletters/population.htm
+/newsletters/product_self_on_tv.htm
+/newsletters/product_to_sell.htm
+/newsletters/reallyrather.htm
+/newsletters/seminar.htm
+/newsletters/shake_your_tail_feathers.htm
+/newsletters/shortest_and_most.htm
+/newsletters/urgentmessage.htm
+/newsletters/yougottabethere.htm
+/newsletters/zakj_lesser_brethren.htm
+/newsletters/zakk_grabbers.htm
+/newsletters/zakl_talent_for_management.htm
+/newsletters/zall_more_stock_secrets.htm
+/newsletters/zaza_interesting_facts.htm
+/newsletters/zazs_automatic_telephone_callls.htm
+/newsletters/zazs_automatic_telephone_calls.htm
+/newsletters/zdkj_protecting_customer_list.htm
+/newsletters/zdkl_human_deadwood.htm
+/newsletters/zdla_multi_level_marketing.htm
+/newsletters/zdld_do_the_twist.htm
+/newsletters/zdld_do_the_twistold.htm
+/newsletters/zdlk_financial_sodomy.htm
+/newsletters/zdll_world_is_urinal.htm
+/newsletters/zdls_halbert_index.htm
+/newsletters/zdzd_piss_somebody_off.htm
+/newsletters/zdzs_not_where.htm
+/newsletters/zdzs_warning_not_newsletter.htm
+/newsletters/zdzz_the_suck.htm
+/newsletters/zfkj_hands_on_experience.htm
+/newsletters/zfkk_best_shot.htm
+/newsletters/zfkl_first_step.htm
+/newsletters/zfla_where_money_is.htm
+/newsletters/zflk_blitzkrieg_paradigm.htm
+/newsletters/zfll_remember_y2k.htm
+/newsletters/zfza_more_money_website.htm
+/newsletters/zfzd_private_details.htm
+/newsletters/zfzs_marketing_problem.htm
+/newsletters/zfzs_pearls_of_wisdom.htm
+/newsletters/zfzz_grout_sponge.htm
+/newsletters/zgkj_blue_books.htm
+/newsletters/zgkk_contests_and_sweepstakes.htm
+/newsletters/zgkl_best_copywriter.htm
+/newsletters/zglk_post_office.htm
+/newsletters/zgll_scared_shitless.htm
+/newsletters/zgza_guru_garys_guide.htm
+/newsletters/zgzd_promoting_website.htm
+/newsletters/zhkj_976_numbers.htm
+/newsletters/zhkk_image_suicide.htm
+/newsletters/zhkl_get_it_going.htm
+/newsletters/zhlg_meditation.htm
+/newsletters/zhlj_real_asshole.htm
+/newsletters/zhlk_promote_website.htm
+/newsletters/zhll_marketing_secrets_revealed.htm
+/newsletters/zhzd_dishevel.htm
+/newsletters/zhzz-07_big_idea.htm
+/newsletters/zjkj_by_the_numbers.htm
+/newsletters/zjkk_cheap_little_classifieds.htm
+/newsletters/zjkl_whats_good.htm
+/newsletters/zjkl_z_missy_letter.htm
+/newsletters/zjlk_personal_computer.htm
+/newsletters/zjll_most_valuable_skill.htm
+/newsletters/zjlz_sweeten_profits.htm
+/newsletters/zjzd_self_pity.htm
+/newsletters/zjzk_by_the_numbers.htm
+/newsletters/zkkj_advertising_more_profitable.htm
+/newsletters/zkkk_killer_headlines.htm
+/newsletters/zkkk_killer_headlinesold.htm
+/newsletters/zkld_out_of_closet.htm
+/newsletters/zkll_better_be_running.htm
+/newsletters/zkza_nuggets.htm
+/newsletters/zkzd_disaster_insurance.htm
+/newsletters/zkzs_sex_and_money.htm
+/newsletters/zkzz_pound_for_pound.htm
+/newsletters/zlkh_direct_mail_nerd.htm
+/newsletters/zlkk_movie_and_tv_stars.htm
+/newsletters/zllj_thoughtless_writing.htm
+/newsletters/zlll_profitable_website.htm
+/newsletters/zlzz_ski_masks.htm
+/newsletters/zskj_10_stupid_things.htm
+/newsletters/zskk_believing_pr.htm
+/newsletters/zskk_dark_side.htm
+/newsletters/zskl_price_is_relative.htm
+/newsletters/zslh_neurological.htm
+/newsletters/zslj_bill_gates.htm
+/newsletters/zsll_live_to_be_110.htm
+/newsletters/zsza_nightmare_clients_alec.htm
+/newsletters/zszd_didn't_masturbate.htm
+/newsletters/zszs_aida.htm

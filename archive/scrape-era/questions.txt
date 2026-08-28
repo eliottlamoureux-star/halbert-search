@@ -1,0 +1,38 @@
+# Your real questions. REPLACE THESE.
+#
+# These are my guesses, written so the tool is testable today. They are worth less
+# than yours: the point of this file is that it becomes the acceptance test in Step 2
+# and the escalation trigger in Step 4 of EXECUTION.md. Guessed questions measure
+# whether the machine works; your questions measure whether it is useful.
+#
+# Blank lines and # lines are ignored.
+#   ./ask.py --batch questions.txt --dry     retrieval only
+#   ./ask.py --batch questions.txt           full answers
+
+# --- diagnostic: a problem I have right now ---
+my cold outreach letters aren't getting replies
+nobody opens the emails I send to prospects
+my offer is good but people still don't buy
+I keep getting meetings but no one signs
+the list I bought converted terribly
+my first campaign worked and the bigger one flopped
+prospects say my prices are too high
+I can't tell if my copy is bad or my audience is wrong
+people read the whole thing then don't act
+I'm getting clicks but no replies
+
+# --- conceptual: explain a thing to me ---
+what makes a guarantee actually work
+how long should a sales letter be
+what should go in the P.S.
+how do I find a market before I write anything
+
+# --- locate: I half-remember a letter ---
+the letter about the coat of arms mailing
+the one where he talks about a starving crowd
+the letter with the dollar bill attached to it
+
+# --- swipe: give me something I can use ---
+give me headline structures I can steal
+show me how he opens a letter to a cold list
+how does he handle an objection mid-copy
