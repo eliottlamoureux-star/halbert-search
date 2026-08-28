@@ -1,0 +1,627 @@
+[
+ {
+  "i": 0,
+  "q": "my cold emails never get a reply, not even a no",
+  "category": "outreach"
+ },
+ {
+  "i": 1,
+  "q": "how many times should i follow up before i drop someone",
+  "category": "outreach"
+ },
+ {
+  "i": 2,
+  "q": "the office manager keeps blocking me from the actual owner",
+  "category": "outreach"
+ },
+ {
+  "i": 3,
+  "q": "should i call these property managers or just keep emailing them",
+  "category": "outreach"
+ },
+ {
+  "i": 4,
+  "q": "best day and time to send cold outreach to contractors",
+  "category": "outreach"
+ },
+ {
+  "i": 5,
+  "q": "he said send me info then went silent for three weeks",
+  "category": "outreach"
+ },
+ {
+  "i": 6,
+  "q": "how do i follow up again without sounding desperate",
+  "category": "outreach"
+ },
+ {
+  "i": 7,
+  "q": "is mailing a physical letter still worth it for local owners",
+  "category": "outreach"
+ },
+ {
+  "i": 8,
+  "q": "nobody opens my emails, is it the subject line or the list",
+  "category": "outreach"
+ },
+ {
+  "i": 9,
+  "q": "how do i get past the receptionist when i cold call",
+  "category": "outreach"
+ },
+ {
+  "i": 10,
+  "q": "should first contact ask for a meeting or just ask for a reply",
+  "category": "outreach"
+ },
+ {
+  "i": 11,
+  "q": "prospect ghosted me after a good first call, what do i do",
+  "category": "outreach"
+ },
+ {
+  "i": 12,
+  "q": "how long should a cold email be to a busy owner",
+  "category": "outreach"
+ },
+ {
+  "i": 13,
+  "q": "i hate cold calling, is there a way around it",
+  "category": "outreach"
+ },
+ {
+  "i": 14,
+  "q": "how do i restart a conversation with a lead from six months ago",
+  "category": "outreach"
+ },
+ {
+  "i": 15,
+  "q": "should i write my outreach in french or english here",
+  "category": "outreach"
+ },
+ {
+  "i": 16,
+  "q": "i get replies but they are all polite brush offs",
+  "category": "outreach"
+ },
+ {
+  "i": 17,
+  "q": "i've rewritten this headline nine times and it still feels flat",
+  "category": "copy"
+ },
+ {
+  "i": 18,
+  "q": "how do i open a sales letter when nobody knows who i am",
+  "category": "copy"
+ },
+ {
+  "i": 19,
+  "q": "my copy sounds like a corporate brochure, how do i fix that",
+  "category": "copy"
+ },
+ {
+  "i": 20,
+  "q": "should this page be short or should i write out everything",
+  "category": "copy"
+ },
+ {
+  "i": 21,
+  "q": "i'm staring at a blank doc, how do i start writing",
+  "category": "copy"
+ },
+ {
+  "i": 22,
+  "q": "how do i tell if my own copy is any good",
+  "category": "copy"
+ },
+ {
+  "i": 23,
+  "q": "my french version feels stiff next to the english one",
+  "category": "copy"
+ },
+ {
+  "i": 24,
+  "q": "what do i cut first when the letter runs too long",
+  "category": "copy"
+ },
+ {
+  "i": 25,
+  "q": "how do i write a headline that isn't a boring feature list",
+  "category": "copy"
+ },
+ {
+  "i": 26,
+  "q": "my copy is all about me and not about the reader",
+  "category": "copy"
+ },
+ {
+  "i": 27,
+  "q": "everything i write sounds like every other agency in town",
+  "category": "copy"
+ },
+ {
+  "i": 28,
+  "q": "how do i make web design sound interesting instead of generic",
+  "category": "copy"
+ },
+ {
+  "i": 29,
+  "q": "should i use bullets or full paragraphs in a sales email",
+  "category": "copy"
+ },
+ {
+  "i": 30,
+  "q": "i can't figure out what order to put my arguments in",
+  "category": "copy"
+ },
+ {
+  "i": 31,
+  "q": "how many headlines should i write before i pick one",
+  "category": "copy"
+ },
+ {
+  "i": 32,
+  "q": "the writing is fine but nothing in it makes anyone act",
+  "category": "copy"
+ },
+ {
+  "i": 33,
+  "q": "how do i edit my own draft without killing what's good",
+  "category": "copy"
+ },
+ {
+  "i": 34,
+  "q": "should i write like i talk or clean it up first",
+  "category": "copy"
+ },
+ {
+  "i": 35,
+  "q": "how do i price a website project without pulling a number out of nowhere",
+  "category": "offer"
+ },
+ {
+  "i": 36,
+  "q": "prospects say the price is fine and then never sign",
+  "category": "offer"
+ },
+ {
+  "i": 37,
+  "q": "should i put a money back guarantee on marketing work",
+  "category": "offer"
+ },
+ {
+  "i": 38,
+  "q": "what do i do when they say i need to think about it",
+  "category": "offer"
+ },
+ {
+  "i": 39,
+  "q": "everyone says too expensive, is that the price or the offer",
+  "category": "offer"
+ },
+ {
+  "i": 40,
+  "q": "should i sell packages or bill hourly for small local clients",
+  "category": "offer"
+ },
+ {
+  "i": 41,
+  "q": "how do i add extras without making the whole thing look cheap",
+  "category": "offer"
+ },
+ {
+  "i": 42,
+  "q": "my proposal has three tiers and they always pick the cheapest",
+  "category": "offer"
+ },
+ {
+  "i": 43,
+  "q": "how do i answer we already have someone doing that",
+  "category": "offer"
+ },
+ {
+  "i": 44,
+  "q": "should i take all the risk myself just to get the first yes",
+  "category": "offer"
+ },
+ {
+  "i": 45,
+  "q": "what makes someone buy this month instead of next year",
+  "category": "offer"
+ },
+ {
+  "i": 46,
+  "q": "how do i justify 5k when a freelancer charges 800",
+  "category": "offer"
+ },
+ {
+  "i": 47,
+  "q": "my offer is the same as everyone else's, how do i change it",
+  "category": "offer"
+ },
+ {
+  "i": 48,
+  "q": "should i raise my prices or will i lose everybody",
+  "category": "offer"
+ },
+ {
+  "i": 49,
+  "q": "how do i kill objections inside the pitch before they say them",
+  "category": "offer"
+ },
+ {
+  "i": 50,
+  "q": "what do i include so the offer is easy to say yes to",
+  "category": "offer"
+ },
+ {
+  "i": 51,
+  "q": "i keep discounting to close deals and i hate myself for it",
+  "category": "offer"
+ },
+ {
+  "i": 52,
+  "q": "should i sell a small paid first step instead of the big project",
+  "category": "offer"
+ },
+ {
+  "i": 53,
+  "q": "should i pick one industry or keep taking anyone who pays",
+  "category": "market"
+ },
+ {
+  "i": 54,
+  "q": "how do i know property managers actually need what i sell",
+  "category": "market"
+ },
+ {
+  "i": 55,
+  "q": "the list i bought is full of dead emails and wrong names",
+  "category": "market"
+ },
+ {
+  "i": 56,
+  "q": "how do i test a niche before committing six months to it",
+  "category": "market"
+ },
+ {
+  "i": 57,
+  "q": "where do i find real contact info for local contractors",
+  "category": "market"
+ },
+ {
+  "i": 58,
+  "q": "is my market too small in a city this size",
+  "category": "market"
+ },
+ {
+  "i": 59,
+  "q": "how do i tell a good list from a garbage one before paying",
+  "category": "market"
+ },
+ {
+  "i": 60,
+  "q": "should i aim at the owner or the person who handles marketing",
+  "category": "market"
+ },
+ {
+  "i": 61,
+  "q": "i'm targeting too broad and my message turned into mush",
+  "category": "market"
+ },
+ {
+  "i": 62,
+  "q": "how many prospects does a niche need to be worth my time",
+  "category": "market"
+ },
+ {
+  "i": 63,
+  "q": "should i scrape my own list or buy one from someone",
+  "category": "market"
+ },
+ {
+  "i": 64,
+  "q": "how do i find businesses already spending money on marketing",
+  "category": "market"
+ },
+ {
+  "i": 65,
+  "q": "is there real demand here or am i inventing a problem",
+  "category": "market"
+ },
+ {
+  "i": 66,
+  "q": "should i chase bigger companies or stay with small shops",
+  "category": "market"
+ },
+ {
+  "i": 67,
+  "q": "how do i check an offer with twenty conversations before building it",
+  "category": "market"
+ },
+ {
+  "i": 68,
+  "q": "my best clients all came from one industry by accident",
+  "category": "market"
+ },
+ {
+  "i": 69,
+  "q": "how do i split a list of 3000 local businesses into groups",
+  "category": "market"
+ },
+ {
+  "i": 70,
+  "q": "should i enter a market that already has ten people selling this",
+  "category": "market"
+ },
+ {
+  "i": 71,
+  "q": "what should i test first when nothing at all is converting",
+  "category": "testing"
+ },
+ {
+  "i": 72,
+  "q": "my campaign worked at 100 emails and died at 1000",
+  "category": "testing"
+ },
+ {
+  "i": 73,
+  "q": "how do i know the difference is real and not just luck",
+  "category": "testing"
+ },
+ {
+  "i": 74,
+  "q": "how many leads do i need before the numbers mean anything",
+  "category": "testing"
+ },
+ {
+  "i": 75,
+  "q": "i changed five things at once and now i can't tell what worked",
+  "category": "testing"
+ },
+ {
+  "i": 76,
+  "q": "one email pulled great once and never worked again",
+  "category": "testing"
+ },
+ {
+  "i": 77,
+  "q": "how do i scale something that's working without breaking it",
+  "category": "testing"
+ },
+ {
+  "i": 78,
+  "q": "should i test the headline first or the offer first",
+  "category": "testing"
+ },
+ {
+  "i": 79,
+  "q": "what numbers should i actually be tracking on my outreach",
+  "category": "testing"
+ },
+ {
+  "i": 80,
+  "q": "my reply rate dropped in half this month and nothing changed",
+  "category": "testing"
+ },
+ {
+  "i": 81,
+  "q": "how long do i let a test run before i call it",
+  "category": "testing"
+ },
+ {
+  "i": 82,
+  "q": "i don't have enough volume to test anything properly",
+  "category": "testing"
+ },
+ {
+  "i": 83,
+  "q": "how do i tell whether the list or the copy is the problem",
+  "category": "testing"
+ },
+ {
+  "i": 84,
+  "q": "when do i kill a campaign instead of tweaking it again",
+  "category": "testing"
+ },
+ {
+  "i": 85,
+  "q": "do i keep the winner or keep testing against it forever",
+  "category": "testing"
+ },
+ {
+  "i": 86,
+  "q": "results look amazing but i only sent forty emails",
+  "category": "testing"
+ },
+ {
+  "i": 87,
+  "q": "how do i track which version a lead actually came from",
+  "category": "testing"
+ },
+ {
+  "i": 88,
+  "q": "every test i run comes back about the same, now what",
+  "category": "testing"
+ },
+ {
+  "i": 89,
+  "q": "client keeps saying yes then disappears for weeks before signing",
+  "category": "client"
+ },
+ {
+  "i": 90,
+  "q": "little extra requests keep piling up and the project never ends",
+  "category": "client"
+ },
+ {
+  "i": 91,
+  "q": "how do i ask for referrals without it being awkward",
+  "category": "client"
+ },
+ {
+  "i": 92,
+  "q": "someone quoted half my price and my client is wavering",
+  "category": "client"
+ },
+ {
+  "i": 93,
+  "q": "how do i keep a client on retainer after the project ships",
+  "category": "client"
+ },
+ {
+  "i": 94,
+  "q": "client won't give feedback and the whole project is stalled",
+  "category": "client"
+ },
+ {
+  "i": 95,
+  "q": "how do i say no to work outside what we agreed",
+  "category": "client"
+ },
+ {
+  "i": 96,
+  "q": "clients vanish after one project and never come back",
+  "category": "client"
+ },
+ {
+  "i": 97,
+  "q": "how do i position myself when cheaper options are everywhere",
+  "category": "client"
+ },
+ {
+  "i": 98,
+  "q": "client wants a new direction after i already built the thing",
+  "category": "client"
+ },
+ {
+  "i": 99,
+  "q": "how do i get paid on time without chasing every month",
+  "category": "client"
+ },
+ {
+  "i": 100,
+  "q": "should i drop a client who eats half my week",
+  "category": "client"
+ },
+ {
+  "i": 101,
+  "q": "how do i turn a one off project into ongoing work",
+  "category": "client"
+ },
+ {
+  "i": 102,
+  "q": "clients compare me to a template that costs them nothing",
+  "category": "client"
+ },
+ {
+  "i": 103,
+  "q": "what do i do with a client who wants to design it himself",
+  "category": "client"
+ },
+ {
+  "i": 104,
+  "q": "the decision keeps stalling because they keep adding more people",
+  "category": "client"
+ },
+ {
+  "i": 105,
+  "q": "how do i ask a happy client for a testimonial worth using",
+  "category": "client"
+ },
+ {
+  "i": 106,
+  "q": "i underpriced this project and now i resent doing the work",
+  "category": "client"
+ },
+ {
+  "i": 107,
+  "q": "my emails started landing in spam once i sent 300 a day",
+  "category": "modern"
+ },
+ {
+  "i": 108,
+  "q": "should i warm up a new sending domain before cold outreach",
+  "category": "modern"
+ },
+ {
+  "i": 109,
+  "q": "my landing page gets traffic but nobody fills out the form",
+  "category": "modern"
+ },
+ {
+  "i": 110,
+  "q": "meta ads eat my budget and bring me junk leads",
+  "category": "modern"
+ },
+ {
+  "i": 111,
+  "q": "how do i set up my crm so follow ups stop slipping",
+  "category": "modern"
+ },
+ {
+  "i": 112,
+  "q": "google business profile or seo, what moves the needle for a local studio",
+  "category": "modern"
+ },
+ {
+  "i": 113,
+  "q": "my instagram posts get likes and zero clients",
+  "category": "modern"
+ },
+ {
+  "i": 114,
+  "q": "should i run google ads or linkedin ads for local b2b",
+  "category": "modern"
+ },
+ {
+  "i": 115,
+  "q": "what analytics do i put on the site to see what's broken",
+  "category": "modern"
+ },
+ {
+  "i": 116,
+  "q": "my open rates cratered after gmail changed their rules",
+  "category": "modern"
+ },
+ {
+  "i": 117,
+  "q": "should i use a cold email tool or send from my own inbox",
+  "category": "modern"
+ },
+ {
+  "i": 118,
+  "q": "how do i make a landing page that loads fast on phones",
+  "category": "modern"
+ },
+ {
+  "i": 119,
+  "q": "linkedin dms feel spammy, is there a version that actually works",
+  "category": "modern"
+ },
+ {
+  "i": 120,
+  "q": "is it worth paying for email verification before a big send",
+  "category": "modern"
+ },
+ {
+  "i": 121,
+  "q": "my site ranks for nothing, where do i even start with seo",
+  "category": "modern"
+ },
+ {
+  "i": 122,
+  "q": "how do i retarget people who looked at my pricing page",
+  "category": "modern"
+ },
+ {
+  "i": 123,
+  "q": "is a newsletter worth it with only forty subscribers",
+  "category": "modern"
+ },
+ {
+  "i": 124,
+  "q": "my ad account got flagged and i have no idea why",
+  "category": "modern"
+ }
+]
