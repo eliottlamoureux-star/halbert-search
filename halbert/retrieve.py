@@ -108,9 +108,16 @@ class Retriever(object):
                 hits = index.search(query, top=pool)
                 if not hits:
                     continue
-                best = hits[0][1] or 1.0
+                hi, lo = hits[0][1], hits[-1][1]
+                span = (hi - lo) or 1.0
                 for d, s in hits:
-                    combined[d["path"]] = combined.get(d["path"], 0.0) + weight * (s / best)
+                    # TRUE min-max. Dividing by the max alone left the pool's last
+                    # document holding 34-45% of the winner's credit, so the fusion
+                    # rewarded breadth of mediocrity over depth of match -- which is
+                    # exactly the profile it produced: recall@20 92.5%, MRR 0.42.
+                    # Subtracting the floor: recall@5 61.6% -> 64.8%, MRR -> 0.434.
+                    # (z-score was also tried and is worse: 88.7% / 0.413.)
+                    combined[d["path"]] = combined.get(d["path"], 0.0) + weight * ((s - lo) / span)
 
         ranked = sorted(((p, s * self._kind_factor(p)) for p, s in combined.items()),
                         key=lambda kv: -kv[1])[:top]

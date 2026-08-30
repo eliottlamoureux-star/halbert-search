@@ -80,12 +80,14 @@ def run(docs, briefs, key, limit=None):
         found = [p for p in got if p in want]
         if found:
             rows.append({"q": q, "verdict": "HIT", "category": meta.get("category"),
-                         "rank": got.index(found[0]) + 1, "want": sorted(want)})
+                         "rank": got.index(found[0]) + 1, "want": sorted(want),
+                         "topscore": round(topscore, 3)})
         else:
             gotb = set(d["path"] for d, _ in brief_index.search(query, top=TOP_K))
             verdict = "QUERY_BAD" if (want & gotb) else "BRIEF_BAD"
             rows.append({"q": q, "verdict": verdict, "category": meta.get("category"),
-                         "want": sorted(want), "top": got[:3], "terms": terms})
+                         "want": sorted(want), "top": got[:3], "terms": terms,
+                         "topscore": round(topscore, 3)})
 
         if i % 50 == 0:
             print("  evaluated %d/%d" % (i, len(items)), file=sys.stderr)
@@ -126,9 +128,26 @@ def report(rows):
         d = bycat.setdefault(r.get("category") or "?", [0, 0])
         d[0] += 1
         d[1] += r["verdict"] == "HIT"
-    print("\n  by category:")
+    # Denominators are printed, never just percentages: "offer 100%" was 19/19,
+    # which is not a measurement anyone should quote.
+    print("\n  by category (n is small -- read the counts, not the percentages):")
     for cat, (tot, hit) in sorted(bycat.items()):
         print("    %-9s %5.1f%%  (%d/%d)" % (cat, 100.0 * hit / max(tot, 1), hit, tot))
+
+    # Abstain signal. 156 NOANSWER questions were previously scored not at all; this
+    # reports whether the top-1 score separates answerable from unanswerable, i.e.
+    # whether a "nothing here" threshold could ever work. DIAGNOSTIC ONLY -- never
+    # tune against it: these labels came from the retriever's own candidate pool, so
+    # fitting a gate to them teaches the engine to decline exactly where it is blind.
+    pos = [r["topscore"] for r in rows if r["verdict"] == "NOANSWER" and "topscore" in r]
+    neg = [r.get("topscore") for r in rows if r["verdict"] != "NOANSWER"]
+    neg = [x for x in neg if x is not None]
+    if pos and neg:
+        wins = sum(1 for a in neg for b in pos if a > b)
+        ties = sum(1 for a in neg for b in pos if a == b)
+        auc = (wins + 0.5 * ties) / float(len(pos) * len(neg))
+        print("\n  abstain AUC (answerable vs NOANSWER, top-1 score): %.3f" % auc)
+        print("    0.50 = no signal, a NOTHING HERE threshold cannot work. Diagnostic only.")
     return s
 
 
