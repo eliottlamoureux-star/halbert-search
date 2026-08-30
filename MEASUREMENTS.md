@@ -86,22 +86,80 @@ refs" (112) · "48 Boron chapters" (the 48 `Boron/` records include `976_Numbers
 `Boron Template.htm`; and Boron 1.0 ch. 2 lives at `Newsletters/BoronLetterCh2.htm` with
 `boron: false`).
 
-## Search quality (2026-08-28)
+## Search quality (2026-08-30)
 
-Measured on 315 corpus-blind questions with an independently-judged answer key
-(159 answerable, 156 with no answer in the archive).
+**Headline: recall@20 = 77.8% (56/72), Wilson 95% CI 66.9-85.8.** Share of *answerable*
+held-out questions where at least one letter the key marks correct appears in the 20 shown.
 
-| stage | recall |
+Read this before quoting it. It is an **upper bound**, for three measured reasons:
+
+| what a user would call it | value | n |
+|---|---|---|
+| top-1 correct | **23.6%** | 17/72 |
+| top-5 contains a right letter | **55.6%** | 40/72 |
+| top-20 contains a right letter | **77.8%** | 56/72 |
+| per-answer recall@20 (each gold letter counted separately) | **50.2%** | 114/227 |
+
+- **Pooling bias was diluted, not removed.** 55% of the key's 227 answers still sit inside
+  the engine's own candidate pool. Split by pool visibility: questions with >=1 gold answer
+  in the pool score **90.3%** (56/62); questions with none score **0.0%** (0/10). The engine
+  finds almost nothing its own pooling routes did not already surface.
+- **The key is annotator-noise-limited.** The two judging routes (engine-pool judges vs
+  document-side readers) agree at **Cohen kappa = 0.34** over 3,236 co-judged pairs.
+  The key is a union of two noisy samples, not a ground truth.
+- **NOANSWER labels are contaminated.** 53 of 125 questions are labelled unanswerable and
+  are *dropped from the denominator*, so a mislabel converts a retrieval failure into a free
+  pass. Hand-probing 11 of them found answering letters in the archive for **11 of 11**.
+  Folding those back in puts the defensible band at **64-74%**.
+
+Sensitivity to that last point:
+
+| mislabelled NOANSWER | n | recall@20 |
+|---|---|---|
+| 0 (as claimed) | 72 | 77.8% [66.9-85.8] |
+| 11 (probed) | 83 | 73.5% [63.1-81.8] |
+| 39 (all non-`modern`) | 111 | 66.7% [57.5-74.7] |
+
+**Nothing here measures the product.** Every number is retrieval-only: does a right letter
+appear in the candidate list. Whether the answer layer then names the right one and quotes it
+accurately has never been measured.
+
+### Recall depends on how many letters answer the question
+
+1-answer questions **56.7%** (n=30) · 2-3 answers 90.5% · 4-6 90.9% · 7+ 100%. The aggregate
+is flattered by broad questions. Hardest half (1-3 answers, n=51): **70.6%**.
+
+### How it got here (TUNED set, 315 questions — history, not current performance)
+
+These are the stage-by-stage gains measured on the same 315 questions that ~70 configurations
+were selected against. They are **superseded** by the held-out numbers above; they are kept
+because they record which change bought what.
+
+| stage | recall (tuned) |
 |---|---|
 | letter-text BM25 only | 54.8% @8 |
 | + brief index fused | 70.4% @8 |
 | + `b=0.35` letter length normalisation | 72.2% @8 |
 | + demote pitch/aside/admin/memorial | 80.0% @12 |
-| + fuse raw question with expanded | **92.5% @20** |
+| + complete answer key | 81.1% @12 |
+| + fuse raw question with expanded | 92.5% @20 (tuned) |
+| + true min-max fusion normalisation | 93.1% @20 (tuned) |
 
-Depth curve at the final setting: @5 61% · @8 72% · @12 81% · @20 **92.5%** · @30 95%.
+Depth on the tuned set: @5 64.8% · @12 81.1% · @20 93.1% · @30 95.0%.
+Held out, the same depths are @5 55.6% · @12 68.1% · @20 77.8% · @30 83.3%.
 
-By category: offer 100% · copy 95% · client 93% · market 93% · outreach 93% ·
-modern 91% · testing 82%.
+### Known measurement defects, unfixed
 
-Remaining failures: QUERY_BAD 3 (1.9%), BRIEF_BAD 9 (5.7%).
+- **n=72 cannot resolve a 1-3 point tuning decision.** ~70 configurations were selected on
+  differences that size. Exact McNemar on min-max vs z-score normalisation: p=0.688 at k=20.
+  On held-out data z-score actually scores higher (80.6% vs 77.8%); the shipped choice is
+  min-max because it was chosen on the tuned set. Neither is significant.
+- **The held-out set paraphrases the tuning set.** Same writer prompt, same 7 categories:
+  18 pairs at Jaccard >= 0.6, 55 of 126 at >= 0.4. Measured effect on score: none detectable
+  (near-dups 76.5% vs non-near-dups 78.2%), but the sets are not independent.
+- **6.6% of gold answers are letters the engine deliberately demotes** (15 of 227 are
+  `kind: pitch`, x0.40). `DEMOTE` was tuned against a key whose judge saw only engine-pool
+  candidates, so it was tuned partly to suppress letters an independent reader calls answers.
+- **The abstain threshold in SKILL.md never fires.** Minimum top-1 fused score over all 125
+  held-out questions is 1.12, above the documented ~1.0 cutoff. Abstain AUC is 0.583; the best
+  single threshold reaches 60.8% accuracy against a 57.6% always-answer baseline.

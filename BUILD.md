@@ -297,7 +297,8 @@ Fix in flight: regenerate `problems` at 12-18 phrasings per letter covering ever
 
 ## 9. Round 3 — target met (2026-08-28)
 
-**recall@20 92.5%**, MRR 0.423, on the complete 315-question key (159 answerable).
+**recall@20 92.5%** on the tuned set, MRR 0.423, on the complete 315-question key.
+That is the TUNED number and is superseded — see MEASUREMENTS.md for the held-out 77.8%.
 
 ```
 HIT 147   QUERY_BAD 3 (1.9%)   BRIEF_BAD 9 (5.7%)
@@ -306,7 +307,8 @@ offer 100% · copy 95% · client 93% · market 93% · outreach 93% · modern 91%
 ```
 
 Progression: 54.8% → 70.4% (wire in the brief index) → 72.2% (`b=0.35`) → 80.0% (demote
-non-teaching) → 81.1% (full key) → **92.5%** (fuse the raw question with the expanded one).
+non-teaching) → 81.1% → **92.5%** tuned (fuse the raw question with the expanded one).
+Every figure in this progression is on the tuned set.
 
 ### The two findings that mattered
 
@@ -315,7 +317,7 @@ it, the letter index did not" — and retrieval searched only letter text. Bridg
 in Phase C and used solely as a diagnostic. Wiring it in: +15.6 points, no new data.
 
 **2. Fuse the raw question, do not replace it.** Searching only the thesaurus-expanded query
-discards signal. Issuing both and fusing is +4.4 points at 20 (88.1% → 92.5%).
+discards signal. Issuing both and fusing is +4.4 points at 20 (88.1% → 92.5%, tuned set).
 
 ### Rejected, with numbers — do not retry without a new mechanism
 

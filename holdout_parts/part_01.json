@@ -1,0 +1,302 @@
+[
+  {
+    "q": "my proposal has three tiers and they always pick the cheapest",
+    "category": "offer",
+    "answers": [],
+    "why": "no letter covers tiered-pricing decoy/anchoring dynamics"
+  },
+  {
+    "q": "how do i answer we already have someone doing that",
+    "category": "offer",
+    "answers": [],
+    "why": "no letter covers the 'already have a vendor' sales objection"
+  },
+  {
+    "q": "should i take all the risk myself just to get the first yes",
+    "category": "offer",
+    "answers": [],
+    "why": "no letter covers seller-side risk-reversal for a first sale"
+  },
+  {
+    "q": "what makes someone buy this month instead of next year",
+    "category": "offer",
+    "answers": [],
+    "why": "no letter covers this-month-vs-later purchase timing/urgency"
+  },
+  {
+    "q": "how do i justify 5k when a freelancer charges 800",
+    "category": "offer",
+    "answers": [
+      "Newsletters/zfzd_private_details.htm",
+      "Newsletters/mentoring.htm"
+    ],
+    "why": "Justify premium fee via track record, refuse to discount"
+  },
+  {
+    "q": "my offer is the same as everyone else's, how do i change it",
+    "category": "offer",
+    "answers": [
+      "Newsletters/2011/whatinternetpeoplegetwrong.htm",
+      "Newsletters/2013/Gary-Halbert-Personal-Ad.htm",
+      "new/b/0790.htm"
+    ],
+    "why": "Fix positioning/voice, amp up marketing, out-build rivals"
+  },
+  {
+    "q": "should i raise my prices or will i lose everybody",
+    "category": "offer",
+    "answers": [
+      "Newsletters/zskl_price_is_relative.htm"
+    ],
+    "why": "Price is relative; sell for what it's worth, don't discount"
+  },
+  {
+    "q": "how do i kill objections inside the pitch before they say them",
+    "category": "offer",
+    "answers": [
+      "Newletter-archives-protected/newsletters/07-29-05.htm"
+    ],
+    "why": "Cover letter preempts the client's cost objection in writing"
+  },
+  {
+    "q": "what do i include so the offer is easy to say yes to",
+    "category": "offer",
+    "answers": [
+      "Newsletters/zgkl_best_copywriter.htm",
+      "Boron/TChapter21.htm",
+      "Newsletters/zjkl_whats_good.htm"
+    ],
+    "why": "Sweeten the offer: trials, guarantees, proof, reason-why"
+  },
+  {
+    "q": "i keep discounting to close deals and i hate myself for it",
+    "category": "offer",
+    "answers": [],
+    "why": "no letter addresses habitual discounting to close deals"
+  },
+  {
+    "q": "should i sell a small paid first step instead of the big project",
+    "category": "offer",
+    "answers": [],
+    "why": "no letter covers a small paid pilot vs a big project"
+  },
+  {
+    "q": "should i pick one industry or keep taking anyone who pays",
+    "category": "market",
+    "answers": [],
+    "why": "no letter addresses specializing vs taking any client"
+  },
+  {
+    "q": "how do i know property managers actually need what i sell",
+    "category": "market",
+    "answers": [
+      "Boron/TChapter5.htm"
+    ],
+    "why": "Judge demand by buyer lists/behavior, not assumption"
+  },
+  {
+    "q": "the list i bought is full of dead emails and wrong names",
+    "category": "market",
+    "answers": [],
+    "why": "no letter addresses cleaning a list of dead/wrong contacts"
+  },
+  {
+    "q": "how do i test a niche before committing six months to it",
+    "category": "market",
+    "answers": [
+      "Newsletters/zfkk_best_shot.htm",
+      "Boron/TChapter22.htm"
+    ],
+    "why": "Cheap best-shot test on hottest names before committing"
+  },
+  {
+    "q": "where do i find real contact info for local contractors",
+    "category": "market",
+    "answers": [
+      "Newsletters/exact_name_mailing_lists.htm"
+    ],
+    "why": "Compiled occupation lists via yellow pages/SRDS/brokers"
+  },
+  {
+    "q": "is my market too small in a city this size",
+    "category": "market",
+    "answers": [],
+    "why": "no letter addresses whether a city-sized market is too small"
+  },
+  {
+    "q": "how do i tell a good list from a garbage one before paying",
+    "category": "market",
+    "answers": [
+      "Newsletters/azkh_starving_crowd.htm",
+      "Boron/TChapter7.htm"
+    ],
+    "why": "Recency, frequency, unit-of-sale grade a list's quality"
+  },
+  {
+    "q": "should i aim at the owner or the person who handles marketing",
+    "category": "market",
+    "answers": [],
+    "why": "no letter addresses targeting owner vs marketing contact"
+  },
+  {
+    "q": "i'm targeting too broad and my message turned into mush",
+    "category": "market",
+    "answers": [
+      "Newsletters/zfzs_pearls_of_wisdom.htm"
+    ],
+    "why": "Audience beats message/copy; narrow to the hungriest crowd"
+  },
+  {
+    "q": "how many prospects does a niche need to be worth my time",
+    "category": "market",
+    "answers": [
+      "Boron/TChapter9.htm"
+    ],
+    "why": "Worked math example sizing a niche list's real profit"
+  },
+  {
+    "q": "should i scrape my own list or buy one from someone",
+    "category": "market",
+    "answers": [
+      "Newsletters/azkh_starving_crowd.htm",
+      "Boron/TChapter6.htm"
+    ],
+    "why": "Own satisfied-customer list beats any rented list"
+  },
+  {
+    "q": "how do i find businesses already spending money on marketing",
+    "category": "market",
+    "answers": [],
+    "why": "no letter covers finding businesses already buying ads"
+  },
+  {
+    "q": "is there real demand here or am i inventing a problem",
+    "category": "market",
+    "answers": [
+      "HOTD/43.htm"
+    ],
+    "why": "Newsstand-style proof of real spend beats guessing demand"
+  },
+  {
+    "q": "should i chase bigger companies or stay with small shops",
+    "category": "market",
+    "answers": [],
+    "why": "no letter addresses chasing big companies vs small shops"
+  },
+  {
+    "q": "how do i check an offer with twenty conversations before building it",
+    "category": "market",
+    "answers": [],
+    "why": "no letter covers validating an offer via 20 conversations"
+  },
+  {
+    "q": "my best clients all came from one industry by accident",
+    "category": "market",
+    "answers": [],
+    "why": "no letter addresses an accidental one-industry client base"
+  },
+  {
+    "q": "how do i split a list of 3000 local businesses into groups",
+    "category": "market",
+    "answers": [
+      "Newsletters/exact_name_mailing_lists.htm"
+    ],
+    "why": "Selects/demographic overlays to segment and customize a list"
+  },
+  {
+    "q": "should i enter a market that already has ten people selling this",
+    "category": "market",
+    "answers": [
+      "Boron/TChapter7.htm"
+    ],
+    "why": "Repeating competitor ads prove the market; do it better"
+  },
+  {
+    "q": "what should i test first when nothing at all is converting",
+    "category": "testing",
+    "answers": [
+      "Newsletters/zfkk_best_shot.htm",
+      "HOTD/40.htm"
+    ],
+    "why": "Test only whether the idea has merit at all, first"
+  },
+  {
+    "q": "my campaign worked at 100 emails and died at 1000",
+    "category": "testing",
+    "answers": [],
+    "why": "no letter addresses a test-to-rollout response collapse"
+  },
+  {
+    "q": "how do i know the difference is real and not just luck",
+    "category": "testing",
+    "answers": [],
+    "why": "no letter addresses distinguishing real lift from luck"
+  },
+  {
+    "q": "how many leads do i need before the numbers mean anything",
+    "category": "testing",
+    "answers": [],
+    "why": "no letter addresses lead-volume needed for significance"
+  },
+  {
+    "q": "i changed five things at once and now i can't tell what worked",
+    "category": "testing",
+    "answers": [],
+    "why": "no letter addresses isolating variables changed at once"
+  },
+  {
+    "q": "one email pulled great once and never worked again",
+    "category": "testing",
+    "answers": [],
+    "why": "no letter addresses a one-time fluke email that never repeats"
+  },
+  {
+    "q": "how do i scale something that's working without breaking it",
+    "category": "testing",
+    "answers": [],
+    "why": "no letter addresses scaling a winner without breaking it"
+  },
+  {
+    "q": "should i test the headline first or the offer first",
+    "category": "testing",
+    "answers": [
+      "Newsletters/zfkk_best_shot.htm",
+      "HOTD/40.htm"
+    ],
+    "why": "Test the whole best-shot package first, not headline vs offer"
+  },
+  {
+    "q": "what numbers should i actually be tracking on my outreach",
+    "category": "testing",
+    "answers": [
+      "Boron/Boron 2.0 chapter 14.htm"
+    ],
+    "why": "Track cost-per-lead, lead quality/effort, and unsubscribe rate"
+  },
+  {
+    "q": "my reply rate dropped in half this month and nothing changed",
+    "category": "testing",
+    "answers": [],
+    "why": "no letter addresses a sudden unexplained reply-rate drop"
+  },
+  {
+    "q": "how long do i let a test run before i call it",
+    "category": "testing",
+    "answers": [
+      "Newsletters/zfkk_best_shot.htm"
+    ],
+    "why": "Give one best-shot test, then cut losses fast if it fails"
+  },
+  {
+    "q": "i don't have enough volume to test anything properly",
+    "category": "testing",
+    "answers": [],
+    "why": "no letter addresses testing properly at very low volume"
+  },
+  {
+    "q": "how do i tell whether the list or the copy is the problem",
+    "category": "testing",
+    "answers": [],
+    "why": "no letter addresses diagnosing list vs copy as the fault"
+  }
+]

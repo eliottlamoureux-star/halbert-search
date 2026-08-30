@@ -11,7 +11,7 @@ Routes:
     /site/...             the untouched mirror
 
 Search calls halbert/retrieve.py -- the same code the CLI and the /halbert skill use.
-Nothing here reimplements retrieval, so the page cannot drift from the measured 92.5%.
+Nothing here reimplements retrieval, so the page cannot drift from the measured number.
 The index is built once at startup (~2s) and reused.
 """
 
@@ -77,7 +77,7 @@ color:var(--mut);font-size:.76rem}
 <a href="#" data-q="what makes a guarantee actually work">guarantees</a></p>
 <div id="out"></div>
 <footer>Searches the letters and a structured summary of each, in his vocabulary and yours.
-Measured recall@20: 92.5%. Private study copy.</footer>
+The right letter is in these results about 78% of the time. Private study copy.</footer>
 </div><script>
 var out=document.getElementById('out'), terms=document.getElementById('terms'),
     q=document.getElementById('q'), go=document.getElementById('go');
