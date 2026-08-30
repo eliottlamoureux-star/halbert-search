@@ -96,4 +96,9 @@ This archive is searchable. See `STRUCTURE.md` for the design, `BUILD.md` for bu
     ./ask.py --dry "my outreach letters aren't getting replies"
 
 or, in Claude Code, `/halbert <your problem>` — which retrieves, reads the letters, and
-answers with a verbatim quote. Measured recall@20: **92.5%**.
+answers with a verbatim quote.
+
+Measured recall@20 on 125 held-out, corpus-blind questions with an independently pooled
+key: **77.8%** (95% CI 66.9-85.8). On the hardest questions -- those with only one or
+two right answers -- **70.6%**. See `MEASUREMENTS.md` for how those numbers were arrived
+at, and why the earlier 92.5% figure was 15 points optimistic.

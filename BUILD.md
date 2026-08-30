@@ -195,7 +195,7 @@ Resumable. Every step below is keyed by file; re-run only what is missing.
 | C briefs | ✅ 346/346, 0 malformed, 210 teaching, multi-authorship detected |
 | D blind questions | ✅ 315 questions, 7×45; **0 leaks** at 3+ shared rare words |
 | E answer key | ✅ **315/315 judged (100%)**, 50% NOANSWER, 0 invalid paths |
-| F evaluate | ✅ **recall@20 92.5%** — target met |
+| F evaluate | ✅ **recall@20 77.8%** held out + independently pooled (93.1% on the tuned set — see §10) |
 | G product | ✅ `/halbert` skill installed at `~/.claude/skills/halbert/` |
 
 ### Round 1 result
@@ -337,3 +337,36 @@ came to claim every topic, and discrimination died. Rejected set kept as
 `TOP_K = 20`. Each candidate prints with a one-line subject from its brief, so the answer
 layer triages 20 without opening any, then reads 4-6 in full. MRR 0.42 means the right letter
 is usually rank 2-3 — but sometimes rank 15, which is why the subject scan matters.
+
+
+---
+
+## 10. Round 4 — honest measurement (2026-08-30)
+
+The 92.5%/93.1% figures in §9 were measured on the same 315 questions that ~70 tuning
+configurations were selected against, with a key pooled from the system under test. Both
+biases were removed and measured separately.
+
+| | tuned set | held out | held out + independently pooled |
+|---|---|---|---|
+| recall@20 | 93.1% | 87.9% | **77.8%** |
+| MRR | 0.434 | 0.339 | **0.382** |
+
+**Report 77.8%** [66.9-85.8], n=72. Tuning selection cost ~5 points; pooling bias ~10 more.
+
+**And a caveat on that number.** Recall depends strongly on how many letters answer a
+question: 1-answer questions score **56.7%** (n=30), 2-3 answers 90.5%, 7+ answers 100%.
+The aggregate is flattered by broad questions with many valid answers. On the hardest half
+— questions with 1-3 right answers, n=51 — recall@20 is **70.6%**. Quote 77.8% for the
+system, 70.6% when the question has one right answer.
+
+### What was tried this round
+
+| change | result |
+|---|---|
+| **Fusion normalisation fix** (docstring said min-max, code divided by max only) | **kept**: recall@5 61.6→64.8%, MRR 0.423→0.434 |
+| Proximity / SDM rerank | rejected — no gain at 15 weight/window settings |
+| Relaxing the `pitch` demotion | rejected — worse at every value, before and after the fix |
+| High-df term guard on thesaurus output | rejected — worse at every cutoff; BM25 IDF already handles it |
+
+One win from four. It came from a reviewer reading the code, not from the literature search.
