@@ -38,6 +38,15 @@ BACKUP = os.path.join(HERE, "briefs.pre-bridge.json")
 # improvement is calibrated wrong, so they were widened to sit between the observed-good
 # state and the known-bad one rather than at the guess. They still catch the enrichment
 # failure, which was nearly twice as far out on both axes.
+# The high-df gate is a PROXY and it has now been observed to fire on a change that
+# measured better. Do not treat it as ground truth. The theory it encoded -- that the
+# enrichment failed because generic phrasings were repeated across letters -- was tested
+# and is FALSE: both sets have only ~0.1% of phrasings sharing a content signature with
+# another letter. The enrichment failed on volume and topic-broadening (4076 new claims
+# that widened what each brief asserts), not on duplicate wording. No mechanical filter
+# here distinguishes the two; only the held-out measurement does. So the gate stays as a
+# tripwire at a level neither state reaches by accident, and the measurement decides.
+#
 # All three numbers below are measured with the CURRENT tokenizer. The stemmer moved
 # them (it merges word forms, so df per stem rises), which is why they are recorded
 # here rather than inherited: base 17 -> 19 high-df on the same briefs.
@@ -45,10 +54,11 @@ BACKUP = os.path.join(HERE, "briefs.pre-bridge.json")
 #     bridge merged      high-df 34   mean words 173   <- recall 77.8 -> 81.9, MRR .455
 #     REJECTED enrichment high-df 51  mean words 248   <- recall 81.1 -> 69.8
 MAX_MEAN_WORDS = 200
-MAX_COMMON = 38
+MAX_COMMON = 45           # raised: see the note above. This is a tripwire, not a target.
 MAX_ASKS = 10
 HIGH_DF = 0.25            # a term in >25% of briefs carries almost no discrimination
-K_FILTER = 3              # round-trip: an ask must retrieve its own letter at RANK 1.
+MAX_LETTERS = 3           # redundancy: drop a phrasing more than this many letters claim.
+K_FILTER = 3              # roundtrip() only, which is REJECTED and kept for ablation.
                           # Swept on the held-out set: k=1 79.2%, k=2 79.2%, k=3 79.2%
                           # at W=1 -- but k=1 keeps the fewest asks (1721 vs 1980) for
                           # the same score and the lowest high-df count, so it is the
@@ -123,8 +133,56 @@ def prune(merged, briefs):
     return kept, dropped_generic, dropped_dupe, capped
 
 
+def redundancy(merged, briefs, max_letters=3):
+    """Drop an ask when many DIFFERENT letters claim the same phrasing.
+
+    This replaces the round-trip filter, which was measured to be actively harmful here.
+    Round-trip keeps an ask only if its own letter already ranks top-k for it -- so it
+    keeps the asks whose letters the engine could already find, and deletes the asks for
+    queries the engine currently gets WRONG. It is anti-correlated with usefulness.
+
+    The case that proved it: for azkh_starving_crowd the writer produced
+    "my campaign worked at a hundred emails and died at a thousand", which is almost
+    verbatim the held-out query that letter was failing. Round-trip deleted it, because
+    a different letter won the top 3 for that phrasing -- which is precisely why the
+    bridge was needed.
+
+    What actually caused the enrichment collapse was not un-retrievable asks, it was the
+    SAME generic phrasing being attached to letter after letter until no brief was
+    distinctive. So filter on that directly: build a content signature per ask (dropping
+    terms already common across briefs), and if more than `max_letters` distinct letters
+    carry the same signature, drop it from all of them.
+    """
+    base = {p: " ".join(filter(None, [
+        b.get("subject", ""), " ".join(b.get("teaches", []) or []),
+        " ".join(b.get("problems", []) or [])])) for p, b in briefs.items()}
+    common, _ = _common_terms(base)
+
+    owners = collections.defaultdict(set)
+    for path, asks in merged.items():
+        for a in asks:
+            sig = frozenset(t for t in bm25.tokenize(a) if t not in common)
+            if sig:
+                owners[sig].add(path)
+
+    generic = set(sig for sig, who in owners.items() if len(who) > max_letters)
+    kept, dropped = {}, []
+    for path, asks in merged.items():
+        keep = []
+        for a in asks:
+            sig = frozenset(t for t in bm25.tokenize(a) if t not in common)
+            if sig and sig in generic:
+                dropped.append((path, a, "%d letters claim it" % len(owners[sig])))
+            else:
+                keep.append(a)
+        kept[path] = keep
+    return kept, dropped
+
+
 def roundtrip(merged, briefs, docs, k_filter=3):
-    """Doc2Query--/Promptagator round-trip: keep an ask only if it retrieves its own letter.
+    """REJECTED. Doc2Query--/Promptagator round-trip: keep an ask only if it retrieves
+    its own letter. Kept for the record and for ablation; see redundancy() for why it is
+    not used. Measured: it deletes the bridges that matter.
 
     This is the real anti-collapse mechanism, and it is stronger than prune() because it
     is competitive rather than absolute. Every candidate ask goes into the index, then
@@ -177,7 +235,7 @@ def merge(dry=False, force=False):
 
     from . import corpus
     docs, _ = corpus.load()
-    merged, rt_dropped = roundtrip(merged, briefs, docs, k_filter=K_FILTER)
+    merged, rt_dropped = redundancy(merged, briefs, max_letters=MAX_LETTERS)
 
     # Rebuild what the index would actually see, and measure the collapse signature.
     def texts_with(asks_by_path):
@@ -203,8 +261,8 @@ def merge(dry=False, force=False):
              sum(counts) / float(len(counts))))
     print("pruned           : %d all-generic  %d near-duplicate  %d over cap"
           % (dg, dd, cap))
-    print("round-trip       : %d dropped (did not retrieve their own letter in top %d)"
-          % (len(rt_dropped), K_FILTER))
+    print("redundancy       : %d dropped (phrasing claimed by >%d letters)"
+          % (len(rt_dropped), MAX_LETTERS))
     for path, a, won in rt_dropped[:5]:
         print("    x %-44s -> %s" % (a[:44], os.path.basename(won)))
     print("mean brief words : %.0f -> %.0f   (gate: <= %d)" % (mw_b, mw_a, MAX_MEAN_WORDS))

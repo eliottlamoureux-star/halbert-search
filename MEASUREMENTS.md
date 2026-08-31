@@ -86,19 +86,23 @@ refs" (112) · "48 Boron chapters" (the 48 `Boron/` records include `976_Numbers
 `Boron Template.htm`; and Boron 1.0 ch. 2 lives at `Newsletters/BoronLetterCh2.htm` with
 `boron: false`).
 
-## Search quality (2026-08-30)
+## Search quality (2026-08-31)
 
-**Headline: recall@20 = 77.8% (56/72), Wilson 95% CI 66.9-85.8.** Share of *answerable*
+**Headline: recall@20 = 80.6% (58/72), Wilson 95% CI 70.0-88.1.** Share of *answerable*
 held-out questions where at least one letter the key marks correct appears in the 20 shown.
+Was 77.8% before the `asks` bridge and light stemming.
 
 Read this before quoting it. It is an **upper bound**, for three measured reasons:
 
 | what a user would call it | value | n |
 |---|---|---|
-| top-1 correct | **23.6%** | 17/72 |
-| top-5 contains a right letter | **55.6%** | 40/72 |
-| top-20 contains a right letter | **77.8%** | 56/72 |
-| per-answer recall@20 (each gold letter counted separately) | **50.2%** | 114/227 |
+| top-1 correct | **34.7%** | 25/72 |
+| top-5 contains a right letter | **63.9%** | 46/72 |
+| top-20 contains a right letter | **80.6%** | 58/72 |
+| MRR | **0.472** | was 0.382 |
+
+Of the letters that are found, the median rank is 2 but the mean is 4.0 and the tail reaches
+20 — quoting "usually rank 2-3" would be wrong.
 
 - **Pooling bias was diluted, not removed.** 55% of the key's 227 answers still sit inside
   the engine's own candidate pool. Split by pool visibility: questions with >=1 gold answer
@@ -163,3 +167,32 @@ Held out, the same depths are @5 55.6% · @12 68.1% · @20 77.8% · @30 83.3%.
 - **The abstain threshold in SKILL.md never fires.** Minimum top-1 fused score over all 125
   held-out questions is 1.12, above the documented ~1.0 cutoff. Abstain AUC is 0.583; the best
   single threshold reaches 60.8% accuracy against a 57.6% always-answer baseline.
+
+## Keywords do not work, and that is not a scoring bug
+
+Reported from live use, then reproduced. Typing a bare topic word returns the letters that
+*mention* it most, not the letter that *teaches* it:
+
+| typed | top 3 returned | where the right letter actually ranks |
+|---|---|---|
+| `guarantee` | a legal-compliance rant, a commodity case study, a male-enhancement sales letter | `2005/10-27-05.htm` ("The 30-Day Hold", risk reversal with worked numbers) at **14** |
+| `cold email` | automated voice-broadcast phone blasts | — |
+
+The full question does not help: *"how do i write a guarantee that actually works"* puts the
+same letter at **11**. This is what term frequency means on a corpus organised by problem
+rather than by topic, and no reweighting fixes it — the letters that teach a thing rarely
+use its name most often.
+
+The fix is a different interaction, not a different score. Every letter carries 4-8 `asks`
+(the questions it answers, in a reader's words), giving a catalogue of **2,130 real
+questions**. `halbert/suggest.py` indexes them, so a keyword becomes a menu:
+
+```
+guarantee -> "does a longer guarantee mean more refunds or fewer"
+             "is a full year guarantee better than thirty days"
+             "my guarantee still isn't removing enough hesitation"
+```
+
+Picking one of those runs a well-formed question, which is what the engine is good at.
+Half-typed words expand by prefix (`guar` works), and no single letter may supply more than
+two suggestions, so one letter with eight asks cannot fill the menu.
