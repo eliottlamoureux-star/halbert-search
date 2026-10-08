@@ -1,0 +1,277 @@
+[
+  {
+    "q": "when do i kill a campaign instead of tweaking it again",
+    "category": "testing",
+    "answers": [
+      "Newsletters/zfkk_best_shot.htm",
+      "Newsletters/zfzs_pearls_of_wisdom.htm",
+      "Newsletters/zskj_10_stupid_things.htm"
+    ],
+    "why": "Test cheap/fast, fail fast; don't kill a winner from boredom"
+  },
+  {
+    "q": "do i keep the winner or keep testing against it forever",
+    "category": "testing",
+    "answers": [
+      "Newsletters/zskj_10_stupid_things.htm"
+    ],
+    "why": "Keep the winner running; test cheap tweaks, don't abandon it"
+  },
+  {
+    "q": "results look amazing but i only sent forty emails",
+    "category": "testing",
+    "answers": [],
+    "why": "Archive has no small-sample statistical-significance guidance"
+  },
+  {
+    "q": "how do i track which version a lead actually came from",
+    "category": "testing",
+    "answers": [],
+    "why": "No candidate teaches version/source tracking for leads"
+  },
+  {
+    "q": "every test i run comes back about the same, now what",
+    "category": "testing",
+    "answers": [
+      "Newsletters/zfkk_best_shot.htm"
+    ],
+    "why": "Test the idea's core merit, not incremental detail tweaks"
+  },
+  {
+    "q": "client keeps saying yes then disappears for weeks before signing",
+    "category": "client",
+    "answers": [],
+    "why": "No letter addresses a verbal-yes prospect who then ghosts"
+  },
+  {
+    "q": "little extra requests keep piling up and the project never ends",
+    "category": "client",
+    "answers": [],
+    "why": "No candidate addresses scope creep on an open-ended project"
+  },
+  {
+    "q": "how do i ask for referrals without it being awkward",
+    "category": "client",
+    "answers": [
+      "Newsletters/monsterwebsiteprofits.htm",
+      "MarkJoyner/hp1.htm"
+    ],
+    "why": "Trade a valuable freebie for one personal referral, not a bare ask"
+  },
+  {
+    "q": "someone quoted half my price and my client is wavering",
+    "category": "client",
+    "answers": [
+      "Newsletters/zdls_halbert_index.htm"
+    ],
+    "why": "Don't compete on price; target buyers who value quality"
+  },
+  {
+    "q": "how do i keep a client on retainer after the project ships",
+    "category": "client",
+    "answers": [],
+    "why": "No letter addresses converting a shipped project into retainer"
+  },
+  {
+    "q": "client won't give feedback and the whole project is stalled",
+    "category": "client",
+    "answers": [],
+    "why": "No candidate addresses a client withholding feedback"
+  },
+  {
+    "q": "how do i say no to work outside what we agreed",
+    "category": "client",
+    "answers": [],
+    "why": "No letter addresses declining out-of-scope client requests"
+  },
+  {
+    "q": "clients vanish after one project and never come back",
+    "category": "client",
+    "answers": [],
+    "why": "No candidate addresses one-off clients never returning"
+  },
+  {
+    "q": "how do i position myself when cheaper options are everywhere",
+    "category": "client",
+    "answers": [
+      "Newsletters/2007/october_2007_pandora/pandora_october_2007.htm"
+    ],
+    "why": "Sell the concept/emotional angle, not just the product"
+  },
+  {
+    "q": "client wants a new direction after i already built the thing",
+    "category": "client",
+    "answers": [
+      "Newsletters/2011/hiringcopywriters.htm"
+    ],
+    "why": "Don't argue direction with client — run an A/B split test instead"
+  },
+  {
+    "q": "how do i get paid on time without chasing every month",
+    "category": "client",
+    "answers": [
+      "Boron/Boron 2.0 chapter 21.htm"
+    ],
+    "why": "Get paid near-daily; late-payment excuses are usually deliberate"
+  },
+  {
+    "q": "should i drop a client who eats half my week",
+    "category": "client",
+    "answers": [
+      "HOTD/7.htm"
+    ],
+    "why": "Fire and refund a client not worth it, even needing the money"
+  },
+  {
+    "q": "how do i turn a one off project into ongoing work",
+    "category": "client",
+    "answers": [],
+    "why": "No letter addresses converting one-off work into ongoing"
+  },
+  {
+    "q": "clients compare me to a template that costs them nothing",
+    "category": "client",
+    "answers": [],
+    "why": "No candidate addresses being compared to a free template"
+  },
+  {
+    "q": "what do i do with a client who wants to design it himself",
+    "category": "client",
+    "answers": [],
+    "why": "Boron Ch.6 candidate is actually about list ranking, not client control"
+  },
+  {
+    "q": "the decision keeps stalling because they keep adding more people",
+    "category": "client",
+    "answers": [
+      "Newsletters/asza_another_issue.htm"
+    ],
+    "why": "Target decisive buyers who don't need to check with a committee"
+  },
+  {
+    "q": "how do i ask a happy client for a testimonial worth using",
+    "category": "client",
+    "answers": [],
+    "why": "No candidate teaches how to prompt a specific, usable testimonial"
+  },
+  {
+    "q": "i underpriced this project and now i resent doing the work",
+    "category": "client",
+    "answers": [],
+    "why": "No letter addresses regret over underpricing already-agreed work"
+  },
+  {
+    "q": "my emails started landing in spam once i sent 300 a day",
+    "category": "modern",
+    "answers": [],
+    "why": "Archive predates spam-filter/sender-reputation mechanics"
+  },
+  {
+    "q": "should i warm up a new sending domain before cold outreach",
+    "category": "modern",
+    "answers": [],
+    "why": "No coverage of email domain warm-up for cold outreach"
+  },
+  {
+    "q": "my landing page gets traffic but nobody fills out the form",
+    "category": "modern",
+    "answers": [
+      "Boron/Boron 2.0 chapter 5.htm"
+    ],
+    "why": "Cut form friction; ask only first name; address hesitant visitors"
+  },
+  {
+    "q": "meta ads eat my budget and bring me junk leads",
+    "category": "modern",
+    "answers": [],
+    "why": "No candidate genuinely covers ad-platform lead quality/targeting"
+  },
+  {
+    "q": "how do i set up my crm so follow ups stop slipping",
+    "category": "modern",
+    "answers": [],
+    "why": "No coverage of CRM software or follow-up tooling"
+  },
+  {
+    "q": "google business profile or seo, what moves the needle for a local studio",
+    "category": "modern",
+    "answers": [],
+    "why": "No candidate compares Google Business Profile vs SEO"
+  },
+  {
+    "q": "my instagram posts get likes and zero clients",
+    "category": "modern",
+    "answers": [],
+    "why": "No coverage of Instagram or social-platform conversion"
+  },
+  {
+    "q": "should i run google ads or linkedin ads for local b2b",
+    "category": "modern",
+    "answers": [],
+    "why": "No candidate compares Google Ads vs LinkedIn Ads for B2B"
+  },
+  {
+    "q": "what analytics do i put on the site to see what's broken",
+    "category": "modern",
+    "answers": [
+      "Newsletters/2010/DraytonBird.htm"
+    ],
+    "why": "Use Google Analytics and directly ask users what failed"
+  },
+  {
+    "q": "my open rates cratered after gmail changed their rules",
+    "category": "modern",
+    "answers": [],
+    "why": "No coverage of Gmail bulk-sender rule changes"
+  },
+  {
+    "q": "should i use a cold email tool or send from my own inbox",
+    "category": "modern",
+    "answers": [],
+    "why": "No candidate compares cold-email tools vs personal inbox"
+  },
+  {
+    "q": "how do i make a landing page that loads fast on phones",
+    "category": "modern",
+    "answers": [],
+    "why": "No coverage of mobile page-speed optimization"
+  },
+  {
+    "q": "linkedin dms feel spammy, is there a version that actually works",
+    "category": "modern",
+    "answers": [],
+    "why": "No coverage of LinkedIn DMs specifically"
+  },
+  {
+    "q": "is it worth paying for email verification before a big send",
+    "category": "modern",
+    "answers": [],
+    "why": "No coverage of email-verification services"
+  },
+  {
+    "q": "my site ranks for nothing, where do i even start with seo",
+    "category": "modern",
+    "answers": [
+      "Boron/Boron 2.0 chapter 18.htm"
+    ],
+    "why": "G.I.F.T. principle: give free info, use keywords, build links"
+  },
+  {
+    "q": "how do i retarget people who looked at my pricing page",
+    "category": "modern",
+    "answers": [],
+    "why": "No coverage of retargeting/pixel-based ads"
+  },
+  {
+    "q": "is a newsletter worth it with only forty subscribers",
+    "category": "modern",
+    "answers": [],
+    "why": "No candidate addresses a viability threshold for list size"
+  },
+  {
+    "q": "my ad account got flagged and i have no idea why",
+    "category": "modern",
+    "answers": [],
+    "why": "Merchant-account-freeze letters don't transfer to ad-account flags"
+  }
+]

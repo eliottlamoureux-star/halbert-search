@@ -1,0 +1,658 @@
+[
+ {
+  "q": "my cold emails to property managers get zero replies",
+  "category": "outreach"
+ },
+ {
+  "q": "should i just call these contractors instead of emailing",
+  "category": "outreach"
+ },
+ {
+  "q": "what do i put in the first line so they keep reading",
+  "category": "outreach"
+ },
+ {
+  "q": "i sent 200 emails last week and got two out of office replies",
+  "category": "outreach"
+ },
+ {
+  "q": "is a handwritten letter still worth the stamp in 2026",
+  "category": "outreach"
+ },
+ {
+  "q": "prospects open my email but never reply",
+  "category": "outreach"
+ },
+ {
+  "q": "cold dm on facebook to local contractors, good idea or not",
+  "category": "outreach"
+ },
+ {
+  "q": "i keep getting forwarded to the wrong person at the company",
+  "category": "outreach"
+ },
+ {
+  "q": "my subject lines feel like spam, help",
+  "category": "outreach"
+ },
+ {
+  "q": "guy said send me info in september then ghosted me",
+  "category": "outreach"
+ },
+ {
+  "q": "how long should a cold email be before they bail",
+  "category": "outreach"
+ },
+ {
+  "q": "writing in french vs english to québec owners, which pulls",
+  "category": "outreach"
+ },
+ {
+  "q": "the owner replied once then went silent, what now",
+  "category": "outreach"
+ },
+ {
+  "q": "my opening paragraph is boring, how do i fix it",
+  "category": "copy"
+ },
+ {
+  "q": "how long should a sales letter be for a 3k service",
+  "category": "copy"
+ },
+ {
+  "q": "how do i know if this letter is any good before sending",
+  "category": "copy"
+ },
+ {
+  "q": "translating my english copy into french kills all the punch",
+  "category": "copy"
+ },
+ {
+  "q": "my landing page copy has no flow, it jumps around",
+  "category": "copy"
+ },
+ {
+  "q": "i can't write about myself without sounding arrogant",
+  "category": "copy"
+ },
+ {
+  "q": "how do i close the letter and actually ask for the sale",
+  "category": "copy"
+ },
+ {
+  "q": "my copy is all features and no reason to care",
+  "category": "copy"
+ },
+ {
+  "q": "bullets or paragraphs for the benefits section",
+  "category": "copy"
+ },
+ {
+  "q": "i wrote four pages and it feels like way too much",
+  "category": "copy"
+ },
+ {
+  "q": "when i edit my own copy i cut it until it's flat",
+  "category": "copy"
+ },
+ {
+  "q": "my testimonials read fake even though they are real",
+  "category": "copy"
+ },
+ {
+  "q": "do stories work in b2b copy or is that consumer only",
+  "category": "copy"
+ },
+ {
+  "q": "need a hook for a letter going to plumbing contractors",
+  "category": "copy"
+ },
+ {
+  "q": "flat fee or hourly for a website build",
+  "category": "offer"
+ },
+ {
+  "q": "prospects say my price is too high then disappear",
+  "category": "offer"
+ },
+ {
+  "q": "is a money back guarantee insane for a service business",
+  "category": "offer"
+ },
+ {
+  "q": "how do i package design and marketing into one clean offer",
+  "category": "offer"
+ },
+ {
+  "q": "everyone says i'll think about it and never comes back",
+  "category": "offer"
+ },
+ {
+  "q": "should i offer a cheap first project to get in the door",
+  "category": "offer"
+ },
+ {
+  "q": "what bonus can i add that doesn't cost me more hours",
+  "category": "offer"
+ },
+ {
+  "q": "my proposals list deliverables but nothing in them feels compelling",
+  "category": "offer"
+ },
+ {
+  "q": "how do i justify 5000 when they expected 800",
+  "category": "offer"
+ },
+ {
+  "q": "should i put pricing on my website or not",
+  "category": "offer"
+ },
+ {
+  "q": "putting a deadline on my offer feels fake, does it work",
+  "category": "offer"
+ },
+ {
+  "q": "how many options in a proposal, one or three",
+  "category": "offer"
+ },
+ {
+  "q": "they love the idea but won't sign, what is missing",
+  "category": "offer"
+ },
+ {
+  "q": "should i charge a deposit and how much",
+  "category": "offer"
+ },
+ {
+  "q": "is a free audit a good lead-in or does it devalue me",
+  "category": "offer"
+ },
+ {
+  "q": "i want to raise my prices without losing the leads i have",
+  "category": "offer"
+ },
+ {
+  "q": "should i niche down to property managers or stay general",
+  "category": "market"
+ },
+ {
+  "q": "how do i know if contractors even want what i'm selling",
+  "category": "market"
+ },
+ {
+  "q": "is my town too small to build a business on one niche",
+  "category": "market"
+ },
+ {
+  "q": "scraping google maps for leads, is that list any good",
+  "category": "market"
+ },
+ {
+  "q": "better to sell to people already buying from a competitor",
+  "category": "market"
+ },
+ {
+  "q": "how big does a niche have to be to feed one guy",
+  "category": "market"
+ },
+ {
+  "q": "list from a broker versus scraping it myself, worth the money",
+  "category": "market"
+ },
+ {
+  "q": "how do i validate demand without building anything first",
+  "category": "market"
+ },
+ {
+  "q": "i want to sell to roofers but there are only 40 nearby",
+  "category": "market"
+ },
+ {
+  "q": "targeting french speaking owners only, am i limiting myself",
+  "category": "market"
+ },
+ {
+  "q": "my list has no owner names, just info@ addresses",
+  "category": "market"
+ },
+ {
+  "q": "how often should i clean and re-verify my prospect list",
+  "category": "market"
+ },
+ {
+  "q": "mail the same list again or go find new names",
+  "category": "market"
+ },
+ {
+  "q": "first campaign worked, second one flopped with the same copy",
+  "category": "testing"
+ },
+ {
+  "q": "results collapsed when i went from 100 to 1000 sends",
+  "category": "testing"
+ },
+ {
+  "q": "how do i track which letter actually produced the phone call",
+  "category": "testing"
+ },
+ {
+  "q": "a/b testing at my volume feels completely pointless",
+  "category": "testing"
+ },
+ {
+  "q": "what response rate should i expect from a cold mail campaign",
+  "category": "testing"
+ },
+ {
+  "q": "how long do i wait before calling a test dead",
+  "category": "testing"
+ },
+ {
+  "q": "should i test price or leave it alone",
+  "category": "testing"
+ },
+ {
+  "q": "my control has won for months, do i keep testing against it",
+  "category": "testing"
+ },
+ {
+  "q": "one client out of 500 emails, is that normal",
+  "category": "testing"
+ },
+ {
+  "q": "how do i measure a campaign when deals close two months later",
+  "category": "testing"
+ },
+ {
+  "q": "should i track opens or is that number garbage now",
+  "category": "testing"
+ },
+ {
+  "q": "i have no idea what a lead costs me and it's bugging me",
+  "category": "testing"
+ },
+ {
+  "q": "when do i kill a campaign versus rewrite the copy",
+  "category": "testing"
+ },
+ {
+  "q": "same offer, different list, completely different results",
+  "category": "testing"
+ },
+ {
+  "q": "how do i scale outreach without the quality falling apart",
+  "category": "testing"
+ },
+ {
+  "q": "is a 2% reply rate good or am i kidding myself",
+  "category": "testing"
+ },
+ {
+  "q": "i keep chasing new ideas instead of doubling down on what worked",
+  "category": "testing"
+ },
+ {
+  "q": "prospect went quiet after the proposal, three weeks now",
+  "category": "client"
+ },
+ {
+  "q": "cheaper competitor quoted half my price and i lost the job",
+  "category": "client"
+ },
+ {
+  "q": "how do i drop a client without burning the relationship",
+  "category": "client"
+ },
+ {
+  "q": "what do i do when the client's brother-in-law does websites",
+  "category": "client"
+ },
+ {
+  "q": "should i push retainers to stop the feast and famine cycle",
+  "category": "client"
+ },
+ {
+  "q": "my clients vanish after the project, no repeat work ever",
+  "category": "client"
+ },
+ {
+  "q": "how do i position against agencies with twenty people",
+  "category": "client"
+ },
+ {
+  "q": "client expects unlimited revisions, how do i cap that",
+  "category": "client"
+ },
+ {
+  "q": "getting paid late every single month, how do i fix my terms",
+  "category": "client"
+ },
+ {
+  "q": "how do i ask an existing client for more work",
+  "category": "client"
+ },
+ {
+  "q": "client wants to see results before he commits to more",
+  "category": "client"
+ },
+ {
+  "q": "i'm a one man shop, do i pretend to be bigger",
+  "category": "client"
+ },
+ {
+  "q": "how do i keep a client happy while results take months",
+  "category": "client"
+ },
+ {
+  "q": "take the small job hoping for the bigger one later",
+  "category": "client"
+ },
+ {
+  "q": "client rewrites my copy and wrecks it, how do i push back",
+  "category": "client"
+ },
+ {
+  "q": "what do i say when they ask who else i've worked with",
+  "category": "client"
+ },
+ {
+  "q": "project delivered, then total silence, how do i reopen it",
+  "category": "client"
+ },
+ {
+  "q": "do i need a separate domain for cold email sending",
+  "category": "modern"
+ },
+ {
+  "q": "google ads is eating my budget and producing no calls",
+  "category": "modern"
+ },
+ {
+  "q": "how do i set up spf dkim dmarc without breaking my mail",
+  "category": "modern"
+ },
+ {
+  "q": "should i pay for a crm or is a spreadsheet fine",
+  "category": "modern"
+ },
+ {
+  "q": "my google business profile doesn't show up in local search",
+  "category": "modern"
+ },
+ {
+  "q": "is seo worth it for a local studio in 2026",
+  "category": "modern"
+ },
+ {
+  "q": "facebook ads for local contractors, what budget do i start with",
+  "category": "modern"
+ },
+ {
+  "q": "one site or a separate landing page per niche",
+  "category": "modern"
+ },
+ {
+  "q": "analytics says people bounce off my site in eight seconds",
+  "category": "modern"
+ },
+ {
+  "q": "linkedin connection limits are killing my outreach volume",
+  "category": "modern"
+ },
+ {
+  "q": "warming up a new sending domain, how long does that take",
+  "category": "modern"
+ },
+ {
+  "q": "sequence tool or send my cold emails manually",
+  "category": "modern"
+ },
+ {
+  "q": "is a video on the landing page worth the effort",
+  "category": "modern"
+ },
+ {
+  "q": "my form submissions are mostly bots and junk addresses",
+  "category": "modern"
+ },
+ {
+  "q": "should i drop a calendar booking link in a cold email",
+  "category": "modern"
+ },
+ {
+  "q": "ai written emails get flagged, does my copy sound like a bot",
+  "category": "modern"
+ },
+ {
+  "q": "prospect emailed back asking how i got his number, how do i answer",
+  "category": "outreach"
+ },
+ {
+  "q": "sending a lumpy package with something inside, does that still get opened",
+  "category": "outreach"
+ },
+ {
+  "q": "everyone in construction is off for the vacances, mail now or wait",
+  "category": "outreach"
+ },
+ {
+  "q": "what do i leave on voicemail when nobody ever calls back",
+  "category": "outreach"
+ },
+ {
+  "q": "should i reference their new building permit in the first line",
+  "category": "outreach"
+ },
+ {
+  "q": "chamber of commerce breakfast, what do i actually say to people there",
+  "category": "outreach"
+ },
+ {
+  "q": "guy replied telling me to get lost, do i answer or drop him",
+  "category": "outreach"
+ },
+ {
+  "q": "reaching back out to people who inquired two years ago and never bought",
+  "category": "outreach"
+ },
+ {
+  "q": "is texting a business owner's cell too far",
+  "category": "outreach"
+ },
+ {
+  "q": "what do i put in the p.s. that isn't just repeating the offer",
+  "category": "copy"
+ },
+ {
+  "q": "does anything go on the envelope or does that kill it",
+  "category": "copy"
+ },
+ {
+  "q": "how do i write a case study that doesn't read like a brochure",
+  "category": "copy"
+ },
+ {
+  "q": "every competitor claims the same thing, how do i say it differently",
+  "category": "copy"
+ },
+ {
+  "q": "i talk better than i write, should i just dictate the letter",
+  "category": "copy"
+ },
+ {
+  "q": "humour in a letter to a 60 year old contractor, too risky",
+  "category": "copy"
+ },
+ {
+  "q": "should the letter come from me personally or from the studio",
+  "category": "copy"
+ },
+ {
+  "q": "i don't fully believe this offer and the copy shows it",
+  "category": "copy"
+ },
+ {
+  "q": "how specific should my numbers be, 47% or about half",
+  "category": "copy"
+ },
+ {
+  "q": "should i take a percentage of results instead of a fixed fee",
+  "category": "offer"
+ },
+ {
+  "q": "client wants to pay in three installments, do i allow that",
+  "category": "offer"
+ },
+ {
+  "q": "he only wants the logo, not the whole package, do i split it",
+  "category": "offer"
+ },
+ {
+  "q": "what offer do i make to a past client to bring him back",
+  "category": "offer"
+ },
+ {
+  "q": "should i pay a referral fee to accountants who send me work",
+  "category": "offer"
+ },
+ {
+  "q": "when do i introduce the upsell, on the call or after delivery",
+  "category": "offer"
+ },
+ {
+  "q": "slow season rate for contractors in january, smart or desperate",
+  "category": "offer"
+ },
+ {
+  "q": "how do i sell a paid audit when everyone else gives one free",
+  "category": "offer"
+ },
+ {
+  "q": "prospect wants a trial month, how do i structure it so it converts",
+  "category": "offer"
+ },
+ {
+  "q": "is an association member directory a legit source of names",
+  "category": "market"
+ },
+ {
+  "q": "half these businesses have no website at all, opportunity or dead end",
+  "category": "market"
+ },
+ {
+  "q": "how far outside sherbrooke can i realistically serve clients",
+  "category": "market"
+ },
+ {
+  "q": "family businesses where the son just took over, good target",
+  "category": "market"
+ },
+ {
+  "q": "franchise locations or the head office, who actually buys",
+  "category": "market"
+ },
+ {
+  "q": "i don't understand hvac at all, can i still sell to them",
+  "category": "market"
+ },
+ {
+  "q": "should i split my list into hot names and cold names",
+  "category": "market"
+ },
+ {
+  "q": "people say go where the money is, what does that mean around here",
+  "category": "market"
+ },
+ {
+  "q": "how do i separate a seasonal dip from a copy problem",
+  "category": "testing"
+ },
+ {
+  "q": "500 pieces mailed, how many replies before i trust the number",
+  "category": "testing"
+ },
+ {
+  "q": "is it the list or the copy that's failing, how do i find out",
+  "category": "testing"
+ },
+ {
+  "q": "i never wrote down last year's results and now i'm guessing",
+  "category": "testing"
+ },
+ {
+  "q": "my winning email stopped pulling after four months, why",
+  "category": "testing"
+ },
+ {
+  "q": "he got my letter then googled me, which one gets the credit",
+  "category": "testing"
+ },
+ {
+  "q": "should i test my new price on real leads or just decide",
+  "category": "testing"
+ },
+ {
+  "q": "raising rates on a client i've had two years, how do i say it",
+  "category": "client"
+ },
+ {
+  "q": "the owner's wife handles marketing and blocks everything i propose",
+  "category": "client"
+ },
+ {
+  "q": "client asked me for seo and i don't do seo, subcontract it",
+  "category": "client"
+ },
+ {
+  "q": "do i need a real contract or is an email approval enough",
+  "category": "client"
+ },
+ {
+  "q": "two clients in the same niche in the same town, is that a conflict",
+  "category": "client"
+ },
+ {
+  "q": "client wants a status call every morning, how do i cut that back",
+  "category": "client"
+ },
+ {
+  "q": "his business is struggling and i can tell he can't pay next month",
+  "category": "client"
+ },
+ {
+  "q": "how do i say no to work without losing the client",
+  "category": "client"
+ },
+ {
+  "q": "booked solid and turning away leads, do i hire or raise prices",
+  "category": "client"
+ },
+ {
+  "q": "casl rules for cold email in canada, am i actually breaking the law",
+  "category": "modern"
+ },
+ {
+  "q": "meta disabled my ad account with no explanation, what now",
+  "category": "modern"
+ },
+ {
+  "q": "how do i get clients to leave google reviews without nagging them",
+  "category": "modern"
+ },
+ {
+  "q": "people find me through chatgpt now, how do i show up there",
+  "category": "modern"
+ },
+ {
+  "q": "should i be using whatsapp instead of email with local owners",
+  "category": "modern"
+ },
+ {
+  "q": "my open tracking is useless since apple started hiding opens",
+  "category": "modern"
+ },
+ {
+  "q": "do i need a privacy policy and cookie banner on a one page site",
+  "category": "modern"
+ }
+]

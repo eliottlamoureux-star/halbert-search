@@ -297,7 +297,8 @@ Fix in flight: regenerate `problems` at 12-18 phrasings per letter covering ever
 
 ## 9. Round 3 — target met (2026-08-28)
 
-**recall@20 92.5%**, MRR 0.423, on the complete 315-question key (159 answerable).
+**recall@20 92.5%** on the tuned set, MRR 0.423, on the complete 315-question key.
+That is the TUNED number and is superseded — see MEASUREMENTS.md for the held-out 77.8%.
 
 ```
 HIT 147   QUERY_BAD 3 (1.9%)   BRIEF_BAD 9 (5.7%)
@@ -306,7 +307,8 @@ offer 100% · copy 95% · client 93% · market 93% · outreach 93% · modern 91%
 ```
 
 Progression: 54.8% → 70.4% (wire in the brief index) → 72.2% (`b=0.35`) → 80.0% (demote
-non-teaching) → 81.1% (full key) → **92.5%** (fuse the raw question with the expanded one).
+non-teaching) → 81.1% → **92.5%** tuned (fuse the raw question with the expanded one).
+Every figure in this progression is on the tuned set.
 
 ### The two findings that mattered
 
@@ -315,7 +317,7 @@ it, the letter index did not" — and retrieval searched only letter text. Bridg
 in Phase C and used solely as a diagnostic. Wiring it in: +15.6 points, no new data.
 
 **2. Fuse the raw question, do not replace it.** Searching only the thesaurus-expanded query
-discards signal. Issuing both and fusing is +4.4 points at 20 (88.1% → 92.5%).
+discards signal. Issuing both and fusing is +4.4 points at 20 (88.1% → 92.5%, tuned set).
 
 ### Rejected, with numbers — do not retry without a new mechanism
 
@@ -349,8 +351,8 @@ biases were removed and measured separately.
 
 | | tuned set | held out | held out + independently pooled |
 |---|---|---|---|
-| recall@20 | 93.1% | 87.9% | **77.8%** |
-| MRR | 0.434 | 0.339 | **0.382** |
+| recall@20 (superseded, see §11) | 93.1% | 87.9% | **77.8%** |
+| MRR (superseded, see §11) | 0.434 | 0.339 | **0.382** |
 
 **Report 77.8%** [66.9-85.8], n=72. Tuning selection cost ~5 points; pooling bias ~10 more.
 
@@ -370,3 +372,90 @@ system, 70.6% when the question has one right answer.
 | High-df term guard on thesaurus output | rejected — worse at every cutoff; BM25 IDF already handles it |
 
 One win from four. It came from a reviewer reading the code, not from the literature search.
+
+---
+
+## §11 — the asks bridge, the keyword finding, and an independent review (2026-08-31)
+
+Held out, with an independently pooled key (72 answerable of 125):
+
+| | before | after |
+|---|---|---|
+| recall@20 | 77.8% | **80.6%** [70.0–88.1] |
+| top-5 | 55.6% | **63.9%** |
+| top-1 | 23.6% | **34.7%** |
+| MRR | 0.382 | **0.472** |
+
+### What changed
+
+**`asks`.** Twelve agents read all 346 letters and wrote 4–8 questions each letter answers,
+in a reader's words — 2,130 in total. Not new topics: restatements of what a letter already
+teaches. The motivating case is `azkh_starving_crowd`, whose brief already said *"My small
+test of a new list did great but the full rollout completely tanked"* while the query
+*"my campaign worked at 100 emails and died at 1000"* missed it. Same problem, zero shared
+words.
+
+**Light stemming.** There was none, despite a comment claiming it. `scale/scaled/scaling` is
+the cheapest paraphrase available.
+
+### What did not work, with the reason
+
+**The round-trip filter (Doc2Query--, arXiv:2301.03266) is actively harmful here.** It keeps
+a generated question only if it retrieves its own letter in the top k. That deletes exactly
+the bridges that matter: for `azkh_starving_crowd` the writer produced *"my campaign worked
+at a hundred emails and died at a thousand"* — almost verbatim the failing query — and the
+filter dropped it, because another letter won the top 3 for that phrasing. Which is *why*
+the bridge was needed. The filter is anti-correlated with usefulness at this corpus size.
+Replaced with a cross-letter redundancy filter; `roundtrip()` is kept for ablation.
+
+**The high-df gate is a proxy, and it fired on a good change.** The theory it encoded — that
+the 2026-08-28 enrichment collapsed because generic phrasings repeated across letters — was
+tested and is **false**: both sets have ~0.1% of phrasings sharing a content signature with
+another letter. The enrichment failed on volume and topic-broadening (4,076 new claims
+widening what each brief asserts), not duplicate wording. Nothing mechanical here separates
+the two; only the held-out measurement does. The gate stays as a tripwire at a level neither
+state reaches by accident.
+
+### Keywords
+
+Reported from live use and reproduced: `guarantee` returns a compliance rant, a commodity
+case study and a male-enhancement sales letter, while the letter teaching risk reversal
+ranks 14th. The full question puts it at 11. This is what term frequency means on a corpus
+organised by problem — the letters that teach a thing rarely use its name most often.
+
+Fixed as an interaction, not a score: `halbert/suggest.py` indexes the 2,130 asks, so a
+keyword returns a menu of real questions and picking one runs a query the engine is good at.
+Served at `/api/suggest`, wired into the search page as a typeahead. Each result also shows
+which question it answers, so the list explains itself.
+
+### From the independent review
+
+Sixteen findings. The ones that were acted on:
+
+- **`check.py` gate F1 was certifying 93.1%** — the tuned number — while printing ALL GATES
+  GREEN. The gate built to stop inherited numbers was asserting the most optimistic figure in
+  the repo. Now recomputes held-out and reports top-1 and top-5 beside recall@20.
+- **A fourth live copy of 92.5% was in `MEASUREMENTS.md`**, the file README cites as the
+  authority for why 92.5% was wrong. New gate F2 fails the build on any stale headline.
+- **A single-hit fusion pass gave its document zero credit** — `(s-lo)/1.0 = 0`. Fixed to
+  full credit. No measured effect (2 of 504 passes) but it discarded the strongest evidence
+  a pass can produce.
+- **`SKILL.md`'s abstain threshold never fired.** Removed rather than retuned: abstain AUC is
+  0.559, and there is no operating point worth having.
+- **`SKILL.md` claimed "expect rank 2-3".** Median is 2, mean 4.0, tail to 20.
+
+Still open, and they matter more than the gain above:
+
+- **Pooling bias was diluted, not removed.** 55% of the key's answers sit inside the engine's
+  own candidate pool; on questions with no pool-visible answer, recall is 0/10.
+- **The key is annotator-noise-limited** — the two judging routes agree at Cohen κ = 0.34.
+- **The 53 NOANSWER questions are dropped from the denominator**, and hand-probing 11 found
+  answering letters for 11 of 11. Corrected for that, the defensible band is nearer 64–74%
+  than 80.6%.
+- **Nothing has ever measured the product** — retrieve, read 4–6, name one letter, quote it.
+  Every number here is retrieval-only.
+- **n=72 cannot resolve a 1–3 point difference**, and roughly 70 configurations have now been
+  selected against differences that size. A fresh 164-question test set
+  (`questions_test.json`) exists and is deliberately untouched; its key was in progress when
+  the session limit stopped the agents. **Quote a number from it, not from the dev set, once
+  it is built.**

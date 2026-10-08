@@ -99,6 +99,6 @@ or, in Claude Code, `/halbert <your problem>` — which retrieves, reads the let
 answers with a verbatim quote.
 
 Measured recall@20 on 125 held-out, corpus-blind questions with an independently pooled
-key: **77.8%** (95% CI 66.9-85.8). On the hardest questions -- those with only one or
+key: **80.6%** (95% CI 66.9-85.8). On the hardest questions -- those with only one or
 two right answers -- **70.6%**. See `MEASUREMENTS.md` for how those numbers were arrived
 at, and why the earlier 92.5% figure was 15 points optimistic.

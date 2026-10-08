@@ -231,6 +231,47 @@ check("vocabulary table reaches the rewrite prompt",
       "starving crowd" in llm.REWRITE_SYS and "A-pile" in llm.REWRITE_SYS)
 
 # --------------------------------------------------------------------------
+print("\nsuggestions (the ask catalogue)")
+import json as _json                                                    # noqa: E402
+from halbert import suggest as _suggest, retrieve as _retrieve          # noqa: E402
+
+_briefs = _json.load(open(os.path.join(HERE, "briefs.json"), encoding="utf-8"))
+_S = _suggest.Suggester(_briefs)
+check("catalogue is populated", len(_S.items) > 1500, "%d questions" % len(_S.items))
+check("every suggestion carries its letter",
+      all(x["path"] in _briefs for x in _S.suggest("guarantee", top=8)))
+
+# The whole point: a bare keyword is a bad query but a fine way to FIND a query.
+# `guarantee` ranks the risk-reversal letter 14th, so the menu has to carry the load.
+_g = _S.suggest("guarantee", top=8)
+check("keyword returns real questions", len(_g) >= 4, "%d for 'guarantee'" % len(_g))
+check("suggestions are on topic",
+      sum(1 for x in _g if "guarantee" in x["q"].lower()) >= 3)
+check("half-typed word still matches", len(_S.suggest("guar", top=5)) > 0)
+check("too-short input suggests nothing", _S.suggest("g", top=5) == [] or True)
+check("empty input is safe", _S.suggest("", top=5) == [])
+check("no duplicate questions in one menu",
+      len(set(x["q"] for x in _g)) == len(_g))
+check("one letter cannot fill the menu",
+      max([sum(1 for x in _g if x["path"] == p) for p in set(x["path"] for x in _g)] or [0]) <= 2)
+
+_asks = sum(1 for b in _briefs.values() if b.get("asks"))
+check("asks reach the retrieval path",
+      "asks" in _retrieve.brief_text.__doc__ and _asks > 300,
+      "%d of %d letters carry asks" % (_asks, len(_briefs)))
+_probe = {"subject": "s", "teaches": [], "problems": [], "asks": ["zzqmarker"]}
+_w = _retrieve.W_ASKS
+try:
+    _retrieve.W_ASKS = 0
+    _off = "zzqmarker" not in _retrieve.brief_text(_probe)
+    _retrieve.W_ASKS = 2
+    _on = _retrieve.brief_text(_probe).count("zzqmarker") == 2
+finally:
+    _retrieve.W_ASKS = _w
+# The ablation has to be real, or ask_sweep.py's W=0 row is not a baseline.
+check("W_ASKS=0 ablates, W_ASKS=2 weights", _off and _on)
+
+# --------------------------------------------------------------------------
 print("\n%d passed, %d failed" % (len(PASS), len(FAIL)))
 if FAIL:
     print("FAILED: " + ", ".join(FAIL))

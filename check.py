@@ -15,6 +15,7 @@ actually went wrong in this build, not a hypothetical):
 
 import json
 import os
+import re
 import subprocess
 import sys
 
@@ -167,17 +168,42 @@ def g_key():
            "%d/%d keyed (%.0f%%), %.0f%% NOANSWER" % (len(k), q_total, cover, pct)
 
 
+# The number this gate is allowed to certify. It is the HELD-OUT one, recomputed here
+# rather than read from eval_results.json. The previous version read that file, which
+# halbert.evaluate writes from answer_key.json -- the 315 questions ~70 configurations
+# were tuned against. So the gate built to stop inherited numbers was certifying the
+# most optimistic number in the repo (93.1%) and printing ALL GATES GREEN. Caught in
+# review 2026-08-30.
+HELDOUT_KEY = "answer_key.holdout.json"
+HELDOUT_FLOOR = 75.0        # regression guard, not a target
+
+
+def _score(key_file):
+    import json as _json
+    from halbert import corpus as _c, evaluate as _e
+    docs, _ = _c.load()
+    with open(os.path.join(HERE, "briefs.json"), encoding="utf-8") as fh:
+        briefs = _json.load(fh)
+    with open(os.path.join(HERE, key_file), encoding="utf-8") as fh:
+        key = _json.load(fh)
+    rows = _e.run(docs, briefs, key)
+    s = _e.summarize(rows)
+    ranks = [x["rank"] for x in rows if x.get("rank")]
+    return s, ranks
+
+
 def g_eval():
-    r = jload("eval_results.json")
-    if r is None:
-        return None, "not run yet"
-    scored = [x for x in r if x.get("verdict") != "NOANSWER"]
-    hits = [x for x in scored if x.get("verdict") == "HIT"]
-    recall = 100.0 * len(hits) / max(len(scored), 1)
-    qb = sum(1 for x in r if x.get("verdict") == "QUERY_BAD")
-    bb = sum(1 for x in r if x.get("verdict") == "BRIEF_BAD")
+    if not os.path.exists(os.path.join(HERE, HELDOUT_KEY)):
+        return None, "held-out key not built"
+    s, ranks = _score(HELDOUT_KEY)
     from halbert import retrieve as _r
-    return recall >= 85.0, "recall@%d %.1f%%  QUERY_BAD %d  BRIEF_BAD %d" % (_r.TOP_K, recall, qb, bb)
+    recall = s["recall_at_%d" % _r.TOP_K] * 100
+    scored = max(s["scored"], 1)
+    at5 = 100.0 * sum(1 for r in ranks if r <= 5) / scored
+    at1 = 100.0 * sum(1 for r in ranks if r == 1) / scored
+    return recall >= HELDOUT_FLOOR, \
+        "HELD-OUT recall@%d %.1f%% (%d/%d) | top-5 %.1f%% | top-1 %.1f%% | MRR %.3f" % (
+            _r.TOP_K, recall, s["counts"].get("HIT", 0), scored, at5, at1, s["mrr"])
 
 
 def g_skill():
@@ -197,6 +223,52 @@ def g_scope():
                   if f.endswith(".py") and not f.startswith("test_"))
     docs = sum(1 for f in os.listdir(HERE) if f.endswith(".md"))
     return engine >= docs, "%d engine modules vs %d documents" % (engine, docs)
+
+
+def g_claims():
+    """Every document that quotes a headline recall must quote the CURRENT held-out one.
+
+    This gate exists because a stale 92.5% shipped three separate times -- in README.md,
+    BUILD.md and SKILL.md, where it was telling the answer layer to trust a candidate list
+    15 points more than it deserved -- and a fourth copy was still live in MEASUREMENTS.md
+    after I believed I had fixed them all. Prose does not get recomputed, so it must be
+    gated instead of proofread.
+    """
+    if not os.path.exists(os.path.join(HERE, HELDOUT_KEY)):
+        return None, "held-out key not built"
+    s_, _ = _score(HELDOUT_KEY)
+    from halbert import retrieve as _r
+    cur = "%.1f%%" % (s_["recall_at_%d" % _r.TOP_K] * 100)
+
+    targets = [os.path.join(HERE, f) for f in
+               ("README.md", "MEASUREMENTS.md", "BUILD.md")]
+    targets.append("/Users/eliottlamoureux/.claude/skills/halbert/SKILL.md")
+
+    missing, stale = [], []
+    for t in targets:
+        if not os.path.exists(t):
+            continue
+        body = open(t, encoding="utf-8").read()
+        name = os.path.basename(t)
+        if cur not in body:
+            missing.append(name)
+        # A superseded figure may appear only where it is labelled as history.
+        for bad in ("92.5%", "93.1%"):
+            for line in body.splitlines():
+                # A line that quotes the current number alongside the old one is a
+                # comparison, which is exactly what we want to encourage.
+                if cur in line:
+                    continue
+                if bad in line and not re.search(
+                        r"tuned|tuning|history|superseded|earlier|was |were |previously|stage|progression",
+                        line, re.I):
+                    stale.append("%s: %s" % (name, line.strip()[:58]))
+    msg = "headline %s present in all docs" % cur
+    if missing:
+        msg = "missing %s in: %s" % (cur, ", ".join(missing))
+    if stale:
+        msg = (msg + " | unlabelled stale: " + "; ".join(stale[:2]))
+    return (not missing and not stale), msg
 
 
 PHASES = [
@@ -221,6 +293,7 @@ PHASES = [
     ]),
     ("F  evaluate", [
         ("F1 recall target", g_eval),
+        ("F2 docs quote it", g_claims),
     ]),
     ("G  product", [
         ("G1 skill installed", g_skill),

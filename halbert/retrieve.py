@@ -39,7 +39,8 @@ HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BRIEFS = os.path.join(HERE, "briefs.json")
 
 TOP_K = 20          # candidates handed to the answer layer.
-                    # recall@12 81.1% · @20 92.5% · @30 95.0%
+                    # Depth on the TUNED set: @12 81.1% · @20 92.5% · @30 95.0%.
+                    # Held out with an independent key it is 77.8% @20 -- see MEASUREMENTS.md.
                     # The answer layer triages 20 cheaply by subject, then reads 4-6 in full.
 
 # b is BM25 length normalisation. 0.35 on letters rather than the usual 0.75 because
@@ -49,6 +50,11 @@ B_BRIEF = 0.75
 W_AUG = 1.0
 W_BRIEF = 1.0
 
+# How many times the `asks` block is repeated in the indexed brief text. Repetition is
+# how term weight is expressed to BM25 here, matching the 1:2:2 subject:teaches:problems
+# scheme above. Swept by ask_sweep.py; 0 disables the bridge entirely for ablation.
+W_ASKS = 1
+
 # Non-teaching letters otherwise occupy top-K slots. Tuned: this beats no demotion
 # (77.4% -> 80.0% @12) and beats milder settings.
 DEMOTE = {"pitch": 0.40, "aside": 0.30, "admin": 0.10, "memorial": 0.10}
@@ -56,12 +62,29 @@ DEMOTE = {"pitch": 0.40, "aside": 0.30, "admin": 0.10, "memorial": 0.10}
 
 def brief_text(b):
     """What of a brief gets indexed. `problems` is the modern-vocabulary bridge and
-    is doubled so it carries more weight than the letter's own framing."""
+    is doubled so it carries more weight than the letter's own framing.
+
+    `asks` is the second half of that bridge: the same problems restated the way a user
+    types them. Motivation: all 16 held-out failures rank #1 when queried with their own
+    brief's wording, so those briefs are discriminative and the index can reach them --
+    what is missing is the user's register, not the content.
+
+    That is NOT true of every failure, and the first version of this comment said it was.
+    Inspecting all 16 individually: some are genuine translation gaps (a brief saying
+    "the full rollout completely tanked" never matches "died at 1000"), some are real
+    coverage gaps where the brief omits the facet asked about, and some are simply wrong
+    key entries. `asks` addresses only the first group. See MEASUREMENTS.md for the split.
+
+    Gated by halbert/merge_bridge.py, which uses a round-trip filter (Doc2Query--,
+    arXiv:2301.03266) so a phrasing survives only if it retrieves its own letter.
+    """
     teaches = " ".join(b.get("teaches", []) or [])
     problems = " ".join(b.get("problems", []) or [])
+    asks = " ".join(b.get("asks", []) or [])
     # subject:teaches:problems weighted 1:2:2 -- measured, see text_sweep.py
-    return " ".join(filter(None, [b.get("subject", ""), teaches, teaches,
-                                  problems, problems]))
+    parts = [b.get("subject", ""), teaches, teaches, problems, problems]
+    parts.extend([asks] * W_ASKS)
+    return " ".join(filter(None, parts))
 
 
 class Retriever(object):
@@ -109,15 +132,20 @@ class Retriever(object):
                 if not hits:
                     continue
                 hi, lo = hits[0][1], hits[-1][1]
-                span = (hi - lo) or 1.0
+                span = hi - lo
                 for d, s in hits:
+                    # A pass with one hit, or with every score tied, has no spread to
+                    # normalise. It used to compute (s-lo)/1.0 = 0, so a pass that
+                    # uniquely surfaced a document gave that document ZERO credit --
+                    # the strongest evidence available, discarded. Full credit instead.
+                    norm = 1.0 if span <= 0 else (s - lo) / span
                     # TRUE min-max. Dividing by the max alone left the pool's last
                     # document holding 34-45% of the winner's credit, so the fusion
                     # rewarded breadth of mediocrity over depth of match -- which is
                     # exactly the profile it produced: recall@20 92.5%, MRR 0.42.
                     # Subtracting the floor: recall@5 61.6% -> 64.8%, MRR -> 0.434.
                     # (z-score was also tried and is worse: 88.7% / 0.413.)
-                    combined[d["path"]] = combined.get(d["path"], 0.0) + weight * ((s - lo) / span)
+                    combined[d["path"]] = combined.get(d["path"], 0.0) + weight * norm
 
         ranked = sorted(((p, s * self._kind_factor(p)) for p, s in combined.items()),
                         key=lambda kv: -kv[1])[:top]
