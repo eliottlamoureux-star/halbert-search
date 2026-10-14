@@ -248,6 +248,7 @@ margin:0;padding:2.5rem 1.25rem 5rem}}
 .wrap{{max-width:60rem;margin:0 auto}}
 h1{{font-size:1.9rem;margin:0 0 .25rem;letter-spacing:-.01em}}
 .sub{{color:var(--mut);margin:0 0 1.5rem;font-size:.95rem}}
+.sub a{{color:var(--acc)}}
 .nav{{border-top:1px solid var(--line);border-bottom:1px solid var(--line);
 padding:.7rem 0;margin-bottom:2rem;font-size:.85rem;color:var(--mut);line-height:2}}
 .nav a{{color:var(--acc);text-decoration:none}}.nav a:hover{{text-decoration:underline}}
@@ -272,11 +273,11 @@ color:var(--mut);font-size:.8rem}}
 --mut:#948c7e;--line:#332f28;--acc:#e0714c}}.tag{{background:#2a261f}}}}
 </style></head><body><div class="wrap">
 <h1>The Gary Halbert Letter</h1>
-<p class="sub">Local mirror · {len(records)} letters · {total_w:,} words · served from disk</p>
+<p class="sub">{len(records)} letters · {total_w:,} words · <a href="index.html">search</a></p>
 <div class="nav">{nav}</div>
 {''.join(rows)}
 <p class="note">Personal offline copy of publicly-readable pages, kept in the
 site's original markup. Not for redistribution.</p>
 </div></body></html>"""
-open(os.path.join(ROOT, "index.html"), "w").write(page)
-print(f"index.html — {len(records)} letters, {total_w:,} words, {len(years)} groups")
+open(os.path.join(ROOT, "browse.html"), "w").write(page)
+print(f"browse.html — {len(records)} letters, {total_w:,} words, {len(years)} groups")

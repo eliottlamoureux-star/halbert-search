@@ -8,7 +8,16 @@ kept in the site's original markup so each letter looks exactly as it does live.
     ./serve.sh            # http://localhost:8848
     ./serve.sh 9000       # or pick a port
 
-`index.html` is the navigation page; `site/` is the untouched mirror.
+`index.html` is the search page, `browse.html` the chronological index, `site/` the mirror.
+The same files are served by GitHub Pages: https://eliottlamoureux-star.github.io/halbert-search/
+
+## Search in the browser
+
+Search runs entirely in the browser. `build_search.py` exports the BM25 index that
+`halbert/retrieve.py` builds to `search-index.json`; `search.js` replays the same ranking.
+After changing `briefs.json`, the corpus, `bm25.py` or `thesaurus.py`:
+
+    python3 build_search.py && python3 test_static_search.py   # must print N/N identical
 
 ## What's here
 
@@ -31,7 +40,7 @@ kept in the site's original markup so each letter looks exactly as it does live.
    `Newletter-archives-protected` prefix, filenames with stray spaces).
 3. `round2.py` / `round3.py` — discovery sweeps beyond the first candidate list
    (see below).
-4. `build_index.py` — regenerates `index.html` + `letters.json` from whatever is
+4. `build_index.py` — regenerates `browse.html` + `letters.json` from whatever is
    on disk. Safe to re-run any time.
 
 ## How coverage was widened
